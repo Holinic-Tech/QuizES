@@ -240,7 +240,7 @@ class _FloatingTimerCheckoutWidgetState
                           ),
                           0.0,
                           valueOrDefault<double>(
-                            MediaQuery.sizeOf(context).width < 390.0
+                            MediaQuery.sizeOf(context).width < 450.0
                                 ? 5.0
                                 : 24.0,
                             0.0,

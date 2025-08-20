@@ -319,10 +319,6 @@ class _PitchBodyDetailedTextImagesWidgetState
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Container(
-                                constraints: BoxConstraints(
-                                  maxWidth:
-                                      MediaQuery.sizeOf(context).width * 0.45,
-                                ),
                                 decoration: BoxDecoration(),
                                 child: Column(
                                   mainAxisSize: MainAxisSize.min,
@@ -426,10 +422,6 @@ class _PitchBodyDetailedTextImagesWidgetState
                                 ),
                               ),
                               Container(
-                                constraints: BoxConstraints(
-                                  maxWidth:
-                                      MediaQuery.sizeOf(context).width * 0.45,
-                                ),
                                 decoration: BoxDecoration(),
                                 child: Column(
                                   mainAxisSize: MainAxisSize.min,

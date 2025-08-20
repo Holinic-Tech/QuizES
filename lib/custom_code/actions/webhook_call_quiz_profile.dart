@@ -95,12 +95,26 @@ Future<void> webhookCallQuizProfile() async {
       print("Failed to get IP address: $e");
     }
 
+    // Get current quiz URL (host + path)
+    String quizUrl = '';
+    try {
+      final uri = Uri.parse(GoRouter.of(NavigatorKey.currentContext!)
+          .routerDelegate
+          .currentConfiguration
+          .uri
+          .toString());
+      quizUrl = '${uri.scheme}://${uri.host}${uri.path}';
+    } catch (e) {
+      print("Failed to get quiz URL: $e");
+    }
+
     // Prepare the payload
     var payload = {
       'name': fullName, // Keep the original full name
       'firstName': firstName,
       'lastName': lastName,
       'email': contactDetails.email,
+      'quizUrl': quizUrl, // Added quiz URL
       'quizData': {
         'rawAnswers': quizProfile.qaPairs
             .map((qaPair) => {

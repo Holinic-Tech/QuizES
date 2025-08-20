@@ -2884,7 +2884,7 @@ ROLLOS */
                           );
                         },
                         child: FlutterFlowYoutubePlayer(
-                          url: 'https://youtube.com/watch?v=rul244vxNec',
+                          url: 'https://youtu.be/uoDMuR-I-Xo',
                           width: double.infinity,
                           autoPlay: false,
                           looping: true,

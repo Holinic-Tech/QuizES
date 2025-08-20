@@ -607,7 +607,7 @@ class FFAppState extends ChangeNotifier {
     ImageAnswerStruct.fromSerializableMap(jsonDecode(
         '{\"image\":\"https://assets.hairqare.co/Curly%20Hair.webp\",\"answer\":\"Rizado\",\"id\":\"hairType_curly\",\"type\":\"hairType\"}')),
     ImageAnswerStruct.fromSerializableMap(jsonDecode(
-        '{\"image\":\"https://assets.hairqare.co/Coily%20Hair.webp\",\"answer\":\"Muy rizado (rizos en espiral muy apretados)\",\"id\":\"hairType_coily\",\"type\":\"hairType\"}')),
+        '{\"image\":\"https://assets.hairqare.co/Coily%20Hair.webp\",\"answer\":\"Muy rizado\",\"id\":\"hairType_coily\",\"type\":\"hairType\"}')),
     ImageAnswerStruct.fromSerializableMap(jsonDecode(
         '{\"image\":\"https://assets.hairqare.co/Q1-Not%20Sure.webp\",\"answer\":\"No sé\",\"id\":\"hairType_unknown\",\"type\":\"hairType\"}'))
   ];
@@ -831,13 +831,13 @@ class FFAppState extends ChangeNotifier {
 
   List<AnswerWithAdditionalInfoStruct> _shampooSpending = [
     AnswerWithAdditionalInfoStruct.fromSerializableMap(jsonDecode(
-        '{\"answer\":\"Menos de 10 dólares\",\"image\":\"https://assets.hairqare.co/Less%20than%20%2410.webp\",\"AnswerTitle\":\" ¡Genial 🤩, eres de las que cuidan su presupuesto!\",\"AnswerDescription\":\"Puedes obtener resultados increíbles sin gastar más de lo que ya gastas (incluso podrías gastar menos), mientras evitas productos dañinos que, sin que te des cuenta, dañan tu cabello. Solo necesitas la rutina adecuada para tu situación particular.\",\"id\":\"spend_under10\",\"type\":\"shampooSpending\"}')),
+        '{\"answer\":\"menos de 10 dólares\",\"image\":\"https://assets.hairqare.co/Less%20than%20%2410.webp\",\"AnswerTitle\":\" ¡Genial 🤩, eres de las que cuidan su presupuesto!\",\"AnswerDescription\":\"Puedes obtener resultados increíbles sin gastar más de lo que ya gastas (incluso podrías gastar menos), mientras evitas productos dañinos que, sin que te des cuenta, dañan tu cabello. Solo necesitas la rutina adecuada para tu situación particular.\",\"id\":\"spend_under10\",\"type\":\"shampooSpending\"}')),
     AnswerWithAdditionalInfoStruct.fromSerializableMap(jsonDecode(
         '{\"answer\":\"entre \$10 y \$20\",\"image\":\"https://assets.hairqare.co/%2410%20-%20%2420.webp\",\"AnswerTitle\":\"¡Increíble 🙌 valoras tu cabello!\",\"AnswerDescription\":\"Estás gastando con cuidado, pero probablemente aún estás pagando por marketing en lugar de resultados. Con la rutina adecuada, podrías obtener resultados realmente transformadores, hechos a la medida de tus necesidades únicas, sin gastar más.\",\"id\":\"spend_10to20\",\"type\":\"shampooSpending\"}')),
     AnswerWithAdditionalInfoStruct.fromSerializableMap(jsonDecode(
         '{\"answer\":\"de \$20 a \$50\",\"image\":\"https://assets.hairqare.co/%2420-%2450.webp\",\"AnswerTitle\":\"Se nota que te importa mucho tu cabello 💜\",\"AnswerDescription\":\"¿Sabías que, en el cuidado capilar premium, hasta el 90% de lo que pagas va en empaque y marketing, y no a ingredientes de calidad? Con la rutina adecuada, en realidad puedes obtener los resultados premium que buscas sin el costo elevado. \",\"id\":\"spend_20to50\",\"type\":\"shampooSpending\"}')),
     AnswerWithAdditionalInfoStruct.fromSerializableMap(jsonDecode(
-        '{\"answer\":\"Más de \$50\",\"image\":\"https://assets.hairqare.co/More%20than%20%2450.webp\",\"AnswerTitle\":\"Tu cabello merece lo mejor ✨\",\"AnswerDescription\":\"¿Sabías que los productos de cuidado capilar premium suelen usar los mismos ingredientes que las opciones más económicas? Con la rutina personalizada adecuada, puedes lograr los resultados que esas marcas de lujo solo prometen.\",\"id\":\"spend_over50\",\"type\":\"shampooSpending\"}'))
+        '{\"answer\":\"más de \$50\",\"image\":\"https://assets.hairqare.co/More%20than%20%2450.webp\",\"AnswerTitle\":\"Tu cabello merece lo mejor ✨\",\"AnswerDescription\":\"¿Sabías que los productos de cuidado capilar premium suelen usar los mismos ingredientes que las opciones más económicas? Con la rutina personalizada adecuada, puedes lograr los resultados que esas marcas de lujo solo prometen.\",\"id\":\"spend_over50\",\"type\":\"shampooSpending\"}'))
   ];
   List<AnswerWithAdditionalInfoStruct> get shampooSpending => _shampooSpending;
   set shampooSpending(List<AnswerWithAdditionalInfoStruct> value) {
@@ -1016,7 +1016,7 @@ class FFAppState extends ChangeNotifier {
 
   List<FieldMappingTableStruct> _cdpMapping = [
     FieldMappingTableStruct.fromSerializableMap(jsonDecode(
-        '{\"questionId\":\"hairGoal\",\"acField\":\"48\",\"mpField\":\"Hair Goal\"}')),
+        '{\"questionId\":\"diagnosisFD\",\"acField\":\"73\",\"mpField\":\"diagnosisFD\"}')),
     FieldMappingTableStruct.fromSerializableMap(jsonDecode(
         '{\"questionId\":\"hairType\",\"acField\":\"20\",\"mpField\":\"Hair Type\"}')),
     FieldMappingTableStruct.fromSerializableMap(jsonDecode(
