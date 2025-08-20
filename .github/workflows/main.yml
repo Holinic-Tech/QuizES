@@ -45,8 +45,8 @@ jobs:
       
     - name: Build FlutterFlow Web
       run: |
-        echo "About to run: flutter build web --web-renderer canvaskit --no-pub --no-version-check --no-tree-shake-icons --verbose"
-        flutter build web --web-renderer canvaskit --no-pub --no-version-check --no-tree-shake-icons --verbose
+        echo "About to run: flutter build web --no-pub --no-version-check --no-tree-shake-icons --verbose"
+        flutter build web --no-pub --no-version-check --no-tree-shake-icons --verbose
       
     - name: Check build directory
       run: |
