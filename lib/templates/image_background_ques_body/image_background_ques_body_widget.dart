@@ -333,7 +333,7 @@ class _ImageBackgroundQuesBodyWidgetState
                             EdgeInsetsDirectional.fromSTEB(0.0, 45.0, 0.0, 0.0),
                         child: AutoSizeText(
                           FFLocalizations.of(context).getText(
-                            'ixew8z9q' /* DO YOU KNOW IF YOU HAVE FOLLIC... */,
+                            'ixew8z9q' /* ¿SABES SI TIENES DISFUNCIÓN FO... */,
                           ),
                           textAlign: TextAlign.center,
                           minFontSize: 18.0,
@@ -850,7 +850,7 @@ class _ImageBackgroundQuesBodyWidgetState
                                 0.0, 0.0, 0.0, 10.0),
                             child: AutoSizeText(
                               FFLocalizations.of(context).getText(
-                                'r3fmpz9h' /* Skip the Quiz */,
+                                'r3fmpz9h' /* Omitir el cuestionario */,
                               ),
                               minFontSize: 12.0,
                               style: FlutterFlowTheme.of(context)

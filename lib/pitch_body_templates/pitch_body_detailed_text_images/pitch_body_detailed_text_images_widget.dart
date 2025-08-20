@@ -318,36 +318,52 @@ class _PitchBodyDetailedTextImagesWidgetState
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              Column(
-                                mainAxisSize: MainAxisSize.min,
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  Row(
-                                    mainAxisSize: MainAxisSize.max,
-                                    children: [
-                                      ClipRRect(
-                                        borderRadius:
-                                            BorderRadius.circular(0.0),
-                                        child: Image.network(
-                                          'https://assets.hairqare.co/checkmark-medium.webp',
-                                          width: 20.0,
-                                          height: 20.0,
-                                          fit: BoxFit.cover,
-                                        ),
-                                      ),
-                                      Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
-                                            10.0, 0.0, 0.0, 0.0),
-                                        child: AutoSizeText(
-                                          valueOrDefault<String>(
-                                            widget.value1,
-                                            'value1',
+                              Container(
+                                constraints: BoxConstraints(
+                                  maxWidth:
+                                      MediaQuery.sizeOf(context).width * 0.45,
+                                ),
+                                decoration: BoxDecoration(),
+                                child: Column(
+                                  mainAxisSize: MainAxisSize.min,
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Row(
+                                      mainAxisSize: MainAxisSize.max,
+                                      children: [
+                                        ClipRRect(
+                                          borderRadius:
+                                              BorderRadius.circular(0.0),
+                                          child: Image.network(
+                                            'https://assets.hairqare.co/checkmark-medium.webp',
+                                            width: 20.0,
+                                            height: 20.0,
+                                            fit: BoxFit.cover,
                                           ),
-                                          minFontSize: 10.0,
-                                          style: FlutterFlowTheme.of(context)
-                                              .bodyMedium
-                                              .override(
-                                                font: GoogleFonts.inter(
+                                        ),
+                                        Padding(
+                                          padding:
+                                              EdgeInsetsDirectional.fromSTEB(
+                                                  10.0, 0.0, 0.0, 0.0),
+                                          child: AutoSizeText(
+                                            valueOrDefault<String>(
+                                              widget.value1,
+                                              'value1',
+                                            ),
+                                            minFontSize: 10.0,
+                                            style: FlutterFlowTheme.of(context)
+                                                .bodyMedium
+                                                .override(
+                                                  font: GoogleFonts.inter(
+                                                    fontWeight: FontWeight.w500,
+                                                    fontStyle:
+                                                        FlutterFlowTheme.of(
+                                                                context)
+                                                            .bodyMedium
+                                                            .fontStyle,
+                                                  ),
+                                                  fontSize: 14.0,
+                                                  letterSpacing: 0.0,
                                                   fontWeight: FontWeight.w500,
                                                   fontStyle:
                                                       FlutterFlowTheme.of(
@@ -355,44 +371,46 @@ class _PitchBodyDetailedTextImagesWidgetState
                                                           .bodyMedium
                                                           .fontStyle,
                                                 ),
-                                                fontSize: 16.0,
-                                                letterSpacing: 0.0,
-                                                fontWeight: FontWeight.w500,
-                                                fontStyle:
-                                                    FlutterFlowTheme.of(context)
-                                                        .bodyMedium
-                                                        .fontStyle,
-                                              ),
-                                        ),
-                                      ),
-                                    ],
-                                  ),
-                                  Row(
-                                    mainAxisSize: MainAxisSize.max,
-                                    children: [
-                                      ClipRRect(
-                                        borderRadius:
-                                            BorderRadius.circular(0.0),
-                                        child: Image.network(
-                                          'https://assets.hairqare.co/checkmark-medium.webp',
-                                          width: 20.0,
-                                          height: 20.0,
-                                          fit: BoxFit.cover,
-                                        ),
-                                      ),
-                                      Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
-                                            10.0, 0.0, 0.0, 0.0),
-                                        child: AutoSizeText(
-                                          valueOrDefault<String>(
-                                            widget.value3,
-                                            'value3',
                                           ),
-                                          minFontSize: 10.0,
-                                          style: FlutterFlowTheme.of(context)
-                                              .bodyMedium
-                                              .override(
-                                                font: GoogleFonts.inter(
+                                        ),
+                                      ],
+                                    ),
+                                    Row(
+                                      mainAxisSize: MainAxisSize.max,
+                                      children: [
+                                        ClipRRect(
+                                          borderRadius:
+                                              BorderRadius.circular(0.0),
+                                          child: Image.network(
+                                            'https://assets.hairqare.co/checkmark-medium.webp',
+                                            width: 20.0,
+                                            height: 20.0,
+                                            fit: BoxFit.cover,
+                                          ),
+                                        ),
+                                        Padding(
+                                          padding:
+                                              EdgeInsetsDirectional.fromSTEB(
+                                                  10.0, 0.0, 0.0, 0.0),
+                                          child: AutoSizeText(
+                                            valueOrDefault<String>(
+                                              widget.value3,
+                                              'value3',
+                                            ),
+                                            minFontSize: 10.0,
+                                            style: FlutterFlowTheme.of(context)
+                                                .bodyMedium
+                                                .override(
+                                                  font: GoogleFonts.inter(
+                                                    fontWeight: FontWeight.w500,
+                                                    fontStyle:
+                                                        FlutterFlowTheme.of(
+                                                                context)
+                                                            .bodyMedium
+                                                            .fontStyle,
+                                                  ),
+                                                  fontSize: 14.0,
+                                                  letterSpacing: 0.0,
                                                   fontWeight: FontWeight.w500,
                                                   fontStyle:
                                                       FlutterFlowTheme.of(
@@ -400,50 +418,59 @@ class _PitchBodyDetailedTextImagesWidgetState
                                                           .bodyMedium
                                                           .fontStyle,
                                                 ),
-                                                fontSize: 16.0,
-                                                letterSpacing: 0.0,
-                                                fontWeight: FontWeight.w500,
-                                                fontStyle:
-                                                    FlutterFlowTheme.of(context)
-                                                        .bodyMedium
-                                                        .fontStyle,
-                                              ),
+                                          ),
                                         ),
-                                      ),
-                                    ],
-                                  ),
-                                ].divide(SizedBox(height: 12.0)),
+                                      ],
+                                    ),
+                                  ].divide(SizedBox(height: 12.0)),
+                                ),
                               ),
-                              Column(
-                                mainAxisSize: MainAxisSize.min,
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  Row(
-                                    mainAxisSize: MainAxisSize.max,
-                                    children: [
-                                      ClipRRect(
-                                        borderRadius:
-                                            BorderRadius.circular(0.0),
-                                        child: Image.network(
-                                          'https://assets.hairqare.co/checkmark-medium.webp',
-                                          width: 20.0,
-                                          height: 20.0,
-                                          fit: BoxFit.cover,
-                                        ),
-                                      ),
-                                      Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
-                                            10.0, 0.0, 0.0, 0.0),
-                                        child: AutoSizeText(
-                                          valueOrDefault<String>(
-                                            widget.value2,
-                                            'value2',
+                              Container(
+                                constraints: BoxConstraints(
+                                  maxWidth:
+                                      MediaQuery.sizeOf(context).width * 0.45,
+                                ),
+                                decoration: BoxDecoration(),
+                                child: Column(
+                                  mainAxisSize: MainAxisSize.min,
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Row(
+                                      mainAxisSize: MainAxisSize.max,
+                                      children: [
+                                        ClipRRect(
+                                          borderRadius:
+                                              BorderRadius.circular(0.0),
+                                          child: Image.network(
+                                            'https://assets.hairqare.co/checkmark-medium.webp',
+                                            width: 20.0,
+                                            height: 20.0,
+                                            fit: BoxFit.cover,
                                           ),
-                                          minFontSize: 10.0,
-                                          style: FlutterFlowTheme.of(context)
-                                              .bodyMedium
-                                              .override(
-                                                font: GoogleFonts.inter(
+                                        ),
+                                        Padding(
+                                          padding:
+                                              EdgeInsetsDirectional.fromSTEB(
+                                                  10.0, 0.0, 0.0, 0.0),
+                                          child: AutoSizeText(
+                                            valueOrDefault<String>(
+                                              widget.value2,
+                                              'value2',
+                                            ),
+                                            minFontSize: 10.0,
+                                            style: FlutterFlowTheme.of(context)
+                                                .bodyMedium
+                                                .override(
+                                                  font: GoogleFonts.inter(
+                                                    fontWeight: FontWeight.w500,
+                                                    fontStyle:
+                                                        FlutterFlowTheme.of(
+                                                                context)
+                                                            .bodyMedium
+                                                            .fontStyle,
+                                                  ),
+                                                  fontSize: 14.0,
+                                                  letterSpacing: 0.0,
                                                   fontWeight: FontWeight.w500,
                                                   fontStyle:
                                                       FlutterFlowTheme.of(
@@ -451,44 +478,46 @@ class _PitchBodyDetailedTextImagesWidgetState
                                                           .bodyMedium
                                                           .fontStyle,
                                                 ),
-                                                fontSize: 16.0,
-                                                letterSpacing: 0.0,
-                                                fontWeight: FontWeight.w500,
-                                                fontStyle:
-                                                    FlutterFlowTheme.of(context)
-                                                        .bodyMedium
-                                                        .fontStyle,
-                                              ),
-                                        ),
-                                      ),
-                                    ],
-                                  ),
-                                  Row(
-                                    mainAxisSize: MainAxisSize.max,
-                                    children: [
-                                      ClipRRect(
-                                        borderRadius:
-                                            BorderRadius.circular(0.0),
-                                        child: Image.network(
-                                          'https://assets.hairqare.co/checkmark-medium.webp',
-                                          width: 20.0,
-                                          height: 20.0,
-                                          fit: BoxFit.cover,
-                                        ),
-                                      ),
-                                      Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
-                                            10.0, 0.0, 0.0, 0.0),
-                                        child: AutoSizeText(
-                                          valueOrDefault<String>(
-                                            widget.value4,
-                                            'value4',
                                           ),
-                                          minFontSize: 10.0,
-                                          style: FlutterFlowTheme.of(context)
-                                              .bodyMedium
-                                              .override(
-                                                font: GoogleFonts.inter(
+                                        ),
+                                      ],
+                                    ),
+                                    Row(
+                                      mainAxisSize: MainAxisSize.max,
+                                      children: [
+                                        ClipRRect(
+                                          borderRadius:
+                                              BorderRadius.circular(0.0),
+                                          child: Image.network(
+                                            'https://assets.hairqare.co/checkmark-medium.webp',
+                                            width: 20.0,
+                                            height: 20.0,
+                                            fit: BoxFit.cover,
+                                          ),
+                                        ),
+                                        Padding(
+                                          padding:
+                                              EdgeInsetsDirectional.fromSTEB(
+                                                  10.0, 0.0, 0.0, 0.0),
+                                          child: AutoSizeText(
+                                            valueOrDefault<String>(
+                                              widget.value4,
+                                              'value4',
+                                            ),
+                                            minFontSize: 10.0,
+                                            style: FlutterFlowTheme.of(context)
+                                                .bodyMedium
+                                                .override(
+                                                  font: GoogleFonts.inter(
+                                                    fontWeight: FontWeight.w500,
+                                                    fontStyle:
+                                                        FlutterFlowTheme.of(
+                                                                context)
+                                                            .bodyMedium
+                                                            .fontStyle,
+                                                  ),
+                                                  fontSize: 14.0,
+                                                  letterSpacing: 0.0,
                                                   fontWeight: FontWeight.w500,
                                                   fontStyle:
                                                       FlutterFlowTheme.of(
@@ -496,19 +525,12 @@ class _PitchBodyDetailedTextImagesWidgetState
                                                           .bodyMedium
                                                           .fontStyle,
                                                 ),
-                                                fontSize: 16.0,
-                                                letterSpacing: 0.0,
-                                                fontWeight: FontWeight.w500,
-                                                fontStyle:
-                                                    FlutterFlowTheme.of(context)
-                                                        .bodyMedium
-                                                        .fontStyle,
-                                              ),
+                                          ),
                                         ),
-                                      ),
-                                    ],
-                                  ),
-                                ].divide(SizedBox(height: 12.0)),
+                                      ],
+                                    ),
+                                  ].divide(SizedBox(height: 12.0)),
+                                ),
                               ),
                               Column(
                                 mainAxisSize: MainAxisSize.min,

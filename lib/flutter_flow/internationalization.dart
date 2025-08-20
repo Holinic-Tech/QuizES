@@ -148,12 +148,6 @@ bool _isSupportedLocale(Locale locale) {
 final kTranslationsMap = <Map<String, Map<String, String>>>[
   // HomePage
   {
-    'x8ai5u31': {
-      'en': '',
-      'de': '',
-      'es': '',
-      'fr': '',
-    },
     'hjp0vvi2': {
       'en': '',
       'de': '',
@@ -166,23 +160,11 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'es': '',
       'fr': '',
     },
-    'g2q0w5rd': {
-      'en': 'Which hair type do you have?',
-      'de': 'Welchen Haartyp haben Sie?',
-      'es': '¿Qué tipo de cabello tienes?',
-      'fr': 'Quel type de cheveux avez-vous ?',
-    },
     'bdqv46ra': {
       'en': '',
       'de': '',
       'es': '',
       'fr': '',
-    },
-    'uaeia9o3': {
-      'en': 'How old are you?',
-      'de': 'Wie alt bist du?',
-      'es': '¿Cuántos años tiene?',
-      'fr': 'Quel âge as-tu?',
     },
     'zf9jz0od': {
       'en': '',
@@ -196,15 +178,8 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'es': '',
       'fr': '',
     },
-    '15jpp8px': {
-      'en': 'What is your biggest hair concern right now?',
-      'de': 'Was ist im Moment Ihr größtes Haarproblem?',
-      'es': '¿Cuál es tu mayor preocupación capilar en este momento?',
-      'fr':
-          'Quelle est votre plus grande préoccupation capillaire en ce moment ?',
-    },
     'onimc71u': {
-      'en': ' Select one',
+      'en': 'Elige una',
       'de': 'Wählen Sie eine aus',
       'es': 'Seleccione uno',
       'fr': 'Sélectionnez-en un',
@@ -214,13 +189,6 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'de': '',
       'es': '',
       'fr': '',
-    },
-    'zaokmujb': {
-      'en': 'What best describes your current haircare routine?',
-      'de': 'Was beschreibt Ihre aktuelle Haarpflegeroutine am besten?',
-      'es': '¿Qué describe mejor tu rutina actual de cuidado del cabello?',
-      'fr':
-          'Qu’est-ce qui décrit le mieux votre routine actuelle de soins capillaires ?',
     },
     'dp0mkedt': {
       'en': '',
@@ -234,112 +202,8 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'es': '',
       'fr': '',
     },
-    'm7uh7oex': {
-      'en':
-          'How familiar are you with HairQare and our approach to holistic haircare?',
-      'de':
-          'Wie gut kennen Sie HairQare und unseren Ansatz zur ganzheitlichen Haarpflege?',
-      'es':
-          '¿Qué tan familiarizado está con HairQare y nuestro enfoque en el cuidado holístico del cabello?',
-      'fr':
-          'Connaissez-vous HairQare et notre approche des soins capillaires holistiques ?',
-    },
-    '646rpwwb': {
-      'en': '',
-      'de': '',
-      'es': '',
-      'fr': '',
-    },
-    'rn48g3to': {
-      'en': '',
-      'de': '',
-      'es': '',
-      'fr': '',
-    },
-    'g791wwh4': {
-      'en': 'Beautiful hair needs more than just products.',
-      'de': 'Schönes Haar braucht mehr als nur Produkte.',
-      'es': 'Un cabello hermoso necesita más que sólo productos.',
-      'fr': 'De beaux cheveux nécessitent plus que de simples produits.',
-    },
-    '5begehn5': {
-      'en':
-          'Our evidence-based programs are developed by Sarah Tran, a certified hair loss specialist, along with a team of researchers, formulation scientists, and medical professionals. ',
-      'de':
-          'Unsere evidenzbasierten Programme werden von Sarah Tran, einer zertifizierten Haarausfallspezialistin, zusammen mit einem Team aus Forschern, Formulierungswissenschaftlern und medizinischem Fachpersonal entwickelt.',
-      'es':
-          'Nuestros programas basados en evidencia son desarrollados por Sarah Tran, especialista certificada en pérdida del cabello, junto con un equipo de investigadores, científicos de formulación y profesionales médicos.',
-      'fr':
-          'Nos programmes fondés sur des preuves sont développés par Sarah Tran, spécialiste certifiée en perte de cheveux, en collaboration avec une équipe de chercheurs, de scientifiques en formulation et de professionnels de la santé.',
-    },
-    'dnzs3t47': {
-      'en':
-          'Clinically proven to restore hair follicle balance quickly and permanently.',
-      'de': 'Klinisch erwiesen: Heilt Ihr Haar schnell und dauerhaft.',
-      'es':
-          'Clínicamente probado para curar tu cabello de forma rápida y permanente.',
-      'fr':
-          'Cliniquement prouvé pour guérir vos cheveux rapidement et durablement.',
-    },
-    's3viwwxq': {
-      'en': 'Proven Results for:',
-      'de': 'Nachgewiesene Ergebnisse für:',
-      'es': 'Resultados comprobados para:',
-      'fr': 'Résultats prouvés pour :',
-    },
-    'dhw0xi88': {
-      'en': 'Any hair concern ',
-      'de': 'Jedes Haarproblem',
-      'es': '¿Alguna preocupación sobre el cabello?',
-      'fr': 'Tout problème de cheveux',
-    },
-    'vyzhveff': {
-      'en': 'Any age',
-      'de': 'Jedes Alter',
-      'es': 'Cualquier edad',
-      'fr': 'Tout âge',
-    },
-    't05pit2o': {
-      'en': 'Any hair type',
-      'de': 'Jeder Haartyp',
-      'es': 'Cualquier tipo de cabello',
-      'fr': 'Tout type de cheveux',
-    },
-    'kuvd0wnn': {
-      'en': 'Any hair goal',
-      'de': 'Jedes Haarziel',
-      'es': 'Cualquier objetivo capilar',
-      'fr': 'N\'importe quel objectif capillaire',
-    },
-    'khaadglv': {
-      'en': 'What best describes your diet?',
-      'de': 'Was beschreibt Ihre Ernährung am besten?',
-      'es': '¿Qué describe mejor tu dieta?',
-      'fr': 'Qu’est-ce qui décrit le mieux votre régime alimentaire ?',
-    },
-    'x3t83a7y': {
-      'en': 'What we eat affects our hair growth and quality.',
-      'de':
-          'Was wir essen, beeinflusst unser Haarwachstum und unsere Haarqualität.',
-      'es':
-          'Lo que comemos afecta el crecimiento y la calidad de nuestro cabello.',
-      'fr':
-          'Ce que nous mangeons affecte la croissance et la qualité de nos cheveux.',
-    },
-    '25wr54y6': {
-      'en': 'How much do you spend on a bottle of shampoo?',
-      'de': 'Wie viel geben Sie für eine Flasche Shampoo aus?',
-      'es': '¿Cuánto gastas en una botella de champú?',
-      'fr': 'Combien dépensez-vous pour une bouteille de shampoing ?',
-    },
-    'rihaqphi': {
-      'en': 'Which of these hair care myths do you believe?',
-      'de': 'Welchen dieser Haarpflegemythen glauben Sie?',
-      'es': '¿En cuál de estos mitos sobre el cuidado del cabello crees?',
-      'fr': 'Auquel de ces mythes sur les soins capillaires croyez-vous ?',
-    },
     'ugf9xggr': {
-      'en': 'Select the damaging practices that you regularly do',
+      'en': 'Selecciona las prácticas dañinas que haces habitualmente.',
       'de':
           'Wählen Sie die schädlichen Praktiken aus, die Sie regelmäßig durchführen',
       'es': 'Selecciona las prácticas dañinas que realizas habitualmente',
@@ -353,7 +217,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
     },
     'xgrtm968': {
       'en':
-          'Here is what you can achieve in 14 days of following the right routine for your hair:',
+          'Esto es lo que puedes lograr en 14 días si sigues la rutina adecuada para tu cabello:',
       'de':
           'Folgendes können Sie in 14 Tagen erreichen, wenn Sie die richtige Routine für Ihr Haar befolgen:',
       'es':
@@ -386,59 +250,13 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'fr': '',
     },
     'miv9wl0i': {
-      'en': 'According to your answers, your dysfunction type is:',
+      'en': 'Según tus respuestas, tu tipo de disfunción es:',
       'de': '',
       'es': '',
       'fr': '',
-    },
-    'o3yak32t': {
-      'en': 'Have you experienced any of the following in the last 6 months? ',
-      'de': '',
-      'es': '',
-      'fr': '',
-    },
-    'vazebtnl': {
-      'en': 'My reflection in the mirror affects my mood and self-esteem.',
-      'de':
-          'Mein Spiegelbild beeinflusst meine Stimmung und mein Selbstwertgefühl.',
-      'es':
-          'Mi reflejo en el espejo afecta mi estado de ánimo y mi autoestima.',
-      'fr':
-          'Mon reflet dans le miroir affecte mon humeur et mon estime de moi.',
-    },
-    'ltw8dxc6': {
-      'en': 'How much do you relate to the following statement?',
-      'de':
-          'Inwieweit können Sie sich mit der folgenden Aussage identifizieren?',
-      'es': '¿En qué medida te identificas con la siguiente afirmación?',
-      'fr':
-          'Dans quelle mesure vous identifiez-vous à l’affirmation suivante ?',
-    },
-    'zcjftwlh': {
-      'en': 'I tend to compare my hair to others\' and it makes me frustrated.',
-      'de':
-          'Ich neige dazu, meine Haare mit denen anderer zu vergleichen und das frustriert mich.',
-      'es':
-          'Tengo tendencia a comparar mi cabello con el de los demás y eso me frustra.',
-      'fr':
-          'J\'ai tendance à comparer mes cheveux à ceux des autres et cela me frustre.',
-    },
-    'j1jzv4xz': {
-      'en': 'How much do you relate to the following statement?',
-      'de':
-          'Inwieweit können Sie sich mit der folgenden Aussage identifizieren?',
-      'es': '¿En qué medida te identificas con la siguiente afirmación?',
-      'fr':
-          'Dans quelle mesure vous identifiez-vous à l’affirmation suivante ?',
-    },
-    'hoc1sdcs': {
-      'en': 'Did a professional refer you to us?',
-      'de': 'Wurden Sie von einem Fachmann an uns verwiesen?',
-      'es': '¿Algún profesional le recomendó contactarnos?',
-      'fr': 'Un professionnel vous a-t-il recommandé chez nous ?',
     },
     '44639e0e': {
-      'en': 'Creating your personalized haircare program',
+      'en': 'Creando tu programa de cuidado capilar personalizado',
       'de': 'Erstellen Sie Ihr persönliches Haarpflegeprogramm',
       'es': 'Creando tu programa de cuidado del cabello personalizado',
       'fr': 'Créer votre programme de soins capillaires personnalisé',
@@ -454,6 +272,12 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'de': 'prüfen',
       'es': 'prueba',
       'fr': 'test',
+    },
+    'iid43xdb': {
+      'en': '¡Eres la candidata perfecta para el reto Haircare😍!',
+      'de': 'Du bist perfekt für die Haircare Challenge 😍',
+      'es': 'Eres perfecto para el reto del cuidado del cabello 😍',
+      'fr': 'Vous êtes la personne idéale pour le Haircare Challenge 😍',
     },
     'f1qq20i3': {
       'en': '🤓 🫧 🧖‍♀️ 🌿🤷‍♀️🙌😢😥🔒🔐😌☺️🤗😣😟😯😵‍💫',
@@ -501,13 +325,13 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'fr': '5',
     },
     'kfse574s': {
-      'en': 'Not at all',
+      'en': 'Para nada.',
       'de': 'Gar nicht',
       'es': 'De nada',
       'fr': 'Pas du tout',
     },
     '9qrzqazn': {
-      'en': 'Totally',
+      'en': '¡Totalmente!',
       'de': 'Völlig',
       'es': 'Totalmente',
       'fr': 'Totalement',
@@ -583,7 +407,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   // FloatingTimerCheckout
   {
     'mtbfmoax': {
-      'en': ' 85% OFF valid for:',
+      'en': '85% OFF HASTA:',
       'de': '85 % Rabatt gültig für:',
       'es': '85% de descuento válido para:',
       'fr': '85% de réduction valable pour :',
@@ -624,13 +448,13 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   // ImageBackground_QuesBody
   {
     'ixew8z9q': {
-      'en': 'DO YOU KNOW IF YOU HAVE FOLLICLE DYSFUNCTION?',
+      'en': '¿SABES SI TIENES DISFUNCIÓN FOLICULAR?',
       'de': 'Beginnen Sie mit der Auswahl Ihres Ziels:',
       'es': 'Comience seleccionando su objetivo:',
       'fr': 'Commencez par sélectionner votre objectif :',
     },
     'r3fmpz9h': {
-      'en': 'Skip the Quiz',
+      'en': 'Omitir el cuestionario',
       'de': 'Überspringen Sie das Quiz',
       'es': 'Saltar el cuestionario',
       'fr': 'Passer le quiz',
@@ -639,7 +463,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   // PitchBody_resultLabelPitch
   {
     'oc18k0vv': {
-      'en': '\n\nHere is what is happening:\n\n',
+      'en': '\n\nEsto es lo que está pasando:\n\n',
       'de': '',
       'es': '',
       'fr': '',
@@ -667,25 +491,25 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   // LoginComponent
   {
     '1e5gv14v': {
-      'en': 'Your results are ready!',
+      'en': '¡Tus resultados están listos!',
       'de': 'Ihre Ergebnisse sind da!',
       'es': '¡Tus resultados están listos!',
       'fr': 'Vos résultats sont prêts !',
     },
     '9kxb0hra': {
-      'en': 'Enter your details \nto unlock your full results 🔐',
+      'en': 'Ingresa tus datos y accede a todos tus resultados 🔐',
       'de': 'Geben Sie Ihre Daten ein, um Ihre Ergebnisse freizuschalten 🔐',
       'es': 'Introduce tus datos para desbloquear tus resultados 🔐',
       'fr': 'Saisissez vos coordonnées\npour accéder à vos résultats 🔐',
     },
     'dhice1ou': {
-      'en': 'Name',
+      'en': 'Nombre',
       'de': 'Name',
       'es': 'Nombre',
       'fr': 'Nom',
     },
     '76eyp598': {
-      'en': 'Email',
+      'en': 'Correo electrónico',
       'de': 'E-Mail',
       'es': 'Correo electrónico',
       'fr': 'E-mail',
@@ -721,7 +545,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'fr': 'Veuillez choisir une option dans la liste déroulante',
     },
     'glfaezfb': {
-      'en': 'Your info is 100% secure and never shared with third parties. ',
+      'en': 'Tu información está 100% segura y nunca se comparte con terceros.',
       'de':
           'Ihre Daten sind 100 % sicher und werden niemals an Dritte weitergegeben.',
       'es': 'Su información es 100% segura y nunca se comparte con terceros.',
@@ -823,14 +647,14 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   // skip_dialog
   {
     '0cja6uh2': {
-      'en': '⚠️ Before you continue...',
+      'en': '⚠️ Antes de continuar...',
       'de': '⚠️ Bevor Sie fortfahren …',
       'es': '⚠️ Antes de continuar...',
       'fr': '⚠️ Avant de continuer...',
     },
     'biuiym7a': {
       'en':
-          'Only skip the quiz if you\'ve previously completed it, as it\'s required to create a personalized routine based on your hair condition, lifestyle, and other key factors.',
+          'Solo omite el cuestionario si ya lo completaste antes, ya que es necesario para crear una rutina personalizada según tu condición capilar, estilo de vida y otros factores clave.',
       'de':
           'Überspringen Sie das Quiz nur, wenn Sie es bereits abgeschlossen haben, da es erforderlich ist, eine personalisierte Routine basierend auf Ihrem Haarzustand, Ihrem Lebensstil und anderen wichtigen Faktoren zu erstellen.',
       'es':
@@ -839,13 +663,13 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
           'Ne sautez le quiz que si vous l\'avez déjà terminé, car il est nécessaire de créer une routine personnalisée en fonction de l\'état de vos cheveux, de votre style de vie et d\'autres facteurs clés.',
     },
     '6x7g4z0e': {
-      'en': 'BACK TO QUIZ',
+      'en': 'VOLVER',
       'de': 'ZURÜCK ZUM QUIZ',
       'es': 'VOLVER AL CUESTIONARIO',
       'fr': 'RETOUR AU QUIZ',
     },
     'jn6yshoa': {
-      'en': 'SKIP QUIZ',
+      'en': 'OMITIR',
       'de': 'QUIZ ÜBERSPRINGEN',
       'es': 'SALTAR LA PRUEBA',
       'fr': 'SAUTER LE QUIZ',
@@ -854,7 +678,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   // LoadingScreen_beforeResult
   {
     'thdd4opu': {
-      'en': 'Restore your hair follicle health within days.',
+      'en': 'Creando tu programa de cuidado capilar personalizado',
       'de': 'Das einzige Haarpflegeprogramm, das Sie jemals brauchen werden',
       'es': 'El único programa de cuidado del cabello que necesitarás',
       'fr': 'Le seul programme de soins capillaires dont vous aurez besoin',
@@ -863,19 +687,19 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   // PitchBody_simpleTextImagesBody
   {
     'u7c6uom7': {
-      'en': 'Follicle dysfunction probability:',
+      'en': 'Probabilidad de disfunción del folículo capilar:',
       'de': '',
       'es': '',
       'fr': '',
     },
     'qgq1r05e': {
-      'en': 'High ',
+      'en': 'ALTA',
       'de': '',
       'es': '',
       'fr': '',
     },
     'h3j1paw8': {
-      'en': '\n\nThe fact that ',
+      'en': '\n\nEl hecho de que',
       'de': 'von Frauen, die mit',
       'es': 'de mujeres, luchando con',
       'fr': 'des femmes aux prises avec',
@@ -937,13 +761,13 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   // MultiChoiceWithImageQuestion_CheckBox
   {
     '7o5y8tc0': {
-      'en': 'Select all that apply',
+      'en': 'Selecciona todas las que apliquen',
       'de': 'Wählen Sie alle zutreffenden Antworten aus',
       'es': 'Seleccione todas las que correspondan',
       'fr': 'Sélectionnez tout ce qui s\'applique',
     },
     '7tkotzl5': {
-      'en': 'None of the above',
+      'en': 'Ninguna de las anteriores',
       'de': 'Nichts des oben Genannten',
       'es': 'Ninguna de las anteriores',
       'fr': 'Aucune des réponses ci-dessus',
@@ -966,23 +790,23 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   },
   // Dashboard
   {
-    'qm88njuv': {
-      'en': 'You are a perfect fit for the Haircare Challenge 😍',
-      'de': 'Du bist perfekt für die Haircare Challenge 😍',
-      'es': 'Eres perfecto para el reto del cuidado del cabello 😍',
-      'fr': 'Vous êtes la personne idéale pour le Haircare Challenge 😍',
-    },
     '26c1jnac': {
-      'en': 'Your matching score is:',
+      'en': 'Tu puntuación de compatibilidad es:',
       'de': 'Ihr Matching-Score ist',
       'es': 'Tu puntuación de coincidencia es',
       'fr': 'Votre score de correspondance est',
     },
     'aq4pinvd': {
-      'en': 'Your hair transformation timeline:',
+      'en': 'Tu línea de tiempo de transformación capilar:',
       'de': 'Zeitplan für Ihre Haartransformation:',
       'es': 'Cronología de tu transformación capilar:',
       'fr': 'Chronologie de votre transformation capillaire :',
+    },
+    '7pj5156l': {
+      'en': '¡Adiós a la frustración y a las decepciones!',
+      'de': '',
+      'es': '',
+      'fr': '',
     },
     'unnguajk': {
       'en': '✅',
@@ -992,7 +816,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
     },
     'gupt5mjs': {
       'en':
-          'Target the root causes of your hair issues and stop them from coming back.',
+          'Ataca las causas de raíz de tus problemas capilares y evita que vuelvan.',
       'de':
           'Bekämpfen Sie die Ursachen Ihrer Haarprobleme und verhindern Sie, dass sie wieder auftreten.',
       'es':
@@ -1008,7 +832,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
     },
     'begqgauj': {
       'en':
-          'Build a personalized, easy-to-follow haircare plan tailored to your unique needs.',
+          'Crea un plan de cuidado capilar personalizado, fácil de seguir y adaptado a tus necesidades únicas.',
       'de':
           'Erstellen Sie einen personalisierten, leicht verständlichen Haarpflegeplan, der auf Ihre individuellen Bedürfnisse zugeschnitten ist.',
       'es':
@@ -1024,7 +848,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
     },
     'qopcc4n9': {
       'en':
-          'Create your own gentle, DIY shampoo & conditioner for lasting results',
+          'Crea tu propio shampoo y acondicionador DIY, suaves y caseros, para obtener resultados duraderos.',
       'de':
           'Kreieren Sie Ihr eigenes sanftes DIY-Shampoo und Ihre Spülung für langanhaltende Ergebnisse',
       'es':
@@ -1033,25 +857,26 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
           'Créez votre propre shampooing et après-shampooing doux et DIY pour des résultats durables',
     },
     'tvn54o9f': {
-      'en': 'JOIN THE CHALLENGE',
+      'en': '¡ÚNETE AL RETO!',
       'de': 'NEHMEN SIE AN DER HERAUSFORDERUNG TEIL',
       'es': 'ÚNETE AL RETO',
       'fr': 'REJOIGNEZ LE DÉFI',
     },
     '2cdo81nl': {
-      'en': '91,000+ women ',
+      'en': 'Más de 91 mil mujeres ',
       'de': '91.000+ Frauen',
       'es': 'más de 91.000 mujeres',
       'fr': 'plus de 91 000 femmes',
     },
     'clhaelj4': {
-      'en': 'have taken this challenge, and ',
+      'en': 'han tomado este reto, y ',
       'de': 'haben diese Herausforderung angenommen und',
       'es': 'han aceptado este desafío y',
       'fr': 'ont relevé ce défi, et',
     },
     'fwse24sg': {
-      'en': '92% of finishers said “It has changed their life”.',
+      'en':
+          'el 92% de quienes terminaron el reto expresaron: “Me cambió la vida”.',
       'de': '92 % der Teilnehmer sagten: „Es hat ihr Leben verändert.“',
       'es':
           'El 92% de los que finalizaron el curso afirmaron: “Les ha cambiado la vida”.',
@@ -1059,26 +884,26 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
           '92 % des personnes ayant terminé le programme ont déclaré : « Cela a changé leur vie ».',
     },
     'phsineyb': {
-      'en': 'START MY CHALLENGE',
+      'en': 'COMENZAR MI RETO',
       'de': 'MEINE HERAUSFORDERUNG STARTEN',
       'es': 'COMIENZA MI RETO',
       'fr': 'COMMENCEZ MON DÉFI',
     },
     'x0h469el': {
-      'en': 'Based on your answers, you just need',
+      'en': 'Según tus respuestas, solo necesitas',
       'de': 'Basierend auf Ihren Antworten müssen Sie nur',
       'es': 'En base a tus respuestas, solo necesitas',
       'fr': 'En fonction de vos réponses, il vous suffit de',
     },
     'u03zkhmn': {
-      'en': '\n10 min a day, for 14 days\n',
+      'en': '\n10 minutos al día, durante 14 días\n',
       'de': '10 Minuten pro Tag, 14 Tage lang',
       'es': '10 minutos al día, durante 14 días',
       'fr': '10 minutes par jour, pendant 14 jours',
     },
     'lxtttebt': {
       'en':
-          'to get beautiful and healthy hair that turns heads and boosts your confidence every single day.',
+          ' para lucir un cabello hermoso y saludable que llame la atención y eleve tu confianza todos los días.',
       'de':
           'um schönes und gesundes Haar zu bekommen, das die Blicke auf sich zieht und Ihr Selbstvertrauen jeden Tag stärkt.',
       'es':
@@ -1087,69 +912,69 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
           'pour obtenir des cheveux beaux et sains qui font tourner les têtes et renforcent votre confiance chaque jour.',
     },
     'rpb2l5tr': {
-      'en': '100%\nResults',
+      'en': '100% \nRESULTADOS',
       'de': '100 %\nErgebnisse',
       'es': '100%\nResultados',
       'fr': '100 %\nRésultats',
     },
     '7qu4hw6f': {
-      'en': '0%\nHassle',
+      'en': '0%\nROLLOS',
       'de': '0 %\nÄrger',
       'es': '0%\nProblemas',
       'fr': '0 %\nProblèmes',
     },
     'on4egm7h': {
-      'en': 'Science-based and ',
+      'en': 'Basado en la ciencia y ',
       'de': 'Wissenschaftlich fundierte und',
       'es': 'Basado en la ciencia y',
       'fr': 'Fondé sur la science et',
     },
     '5zr2seie': {
-      'en': 'reviewed by haircare experts.',
+      'en': 'revisado por expertos en el cuidado capilar.',
       'de': 'Von Haarpflegeexperten geprüft.',
       'es': 'Revisado por expertos en el cuidado del cabello.',
       'fr': 'examiné par des experts en soins capillaires.',
     },
     '7t1iikxr': {
-      'en': 'Get a ',
+      'en': 'Obtén un ',
       'de': 'Holen Sie sich ein',
       'es': 'Conseguir una',
       'fr': 'Obtenez un',
     },
     'hv2znn3j': {
-      'en': 'nutrient-rich meal plan ',
+      'en': 'un plan de alimentación rico en nutrientes ',
       'de': 'nährstoffreicher Speiseplan',
       'es': 'plan de alimentación rico en nutrientes',
       'fr': 'plan de repas riche en nutriments',
     },
     'q9istz0v': {
-      'en': 'to minimise hair loss and enhance hair thickness.',
+      'en': 'para minimizar la caída del cabello y mejorar su grosor.',
       'de': 'um Haarausfall zu minimieren und die Haardichte zu verbessern.',
       'es':
           'Para minimizar la caída del cabello y mejorar el grosor del cabello.',
       'fr': 'pour minimiser la perte de cheveux et améliorer leur épaisseur.',
     },
     'yqzvlhso': {
-      'en': 'Save thousands ',
+      'en': 'Ahorra miles de pesos ',
       'de': 'Sparen Sie Tausende',
       'es': 'Ahorre miles',
       'fr': 'Économisez des milliers',
     },
     '16qkzkbg': {
-      'en': 'on products and salon treatments you won\'t need anymore.',
+      'en': 'en productos y tratamientos de estética que ya no necesitarás.',
       'de': 'für Produkte und Salonbehandlungen, die Sie nicht mehr benötigen.',
       'es': 'sobre productos y tratamientos de salón que ya no necesitarás.',
       'fr':
           'sur les produits et soins de salon dont vous n\'aurez plus besoin.',
     },
     '8p79eqjq': {
-      'en': 'START MY CHALLENGE',
+      'en': 'COMENZAR MI RETO',
       'de': 'MEINE HERAUSFORDERUNG STARTEN',
       'es': 'COMIENZA MI RETO',
       'fr': 'COMMENCEZ MON DÉFI',
     },
     '6kg20sml': {
-      'en': '100% Refund guarantee | No Questions Asked',
+      'en': 'Garantía de reembolso del 100% | Sin necesidad de explicaciones',
       'de': '100% Geld-zurück-Garantie | Keine Fragen gestellt',
       'es': 'Garantía de reembolso del 100 % | Sin preguntas',
       'fr': 'Garantie de remboursement à 100 % | Aucune question posée',

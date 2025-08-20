@@ -144,10 +144,8 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                             updateCallback: () => safeSetState(() {}),
                             child: ImageBackgroundQuesBodyWidget(
                               question:
-                                  'See if the Challenge is a fit for you and your hair profile ',
-                              answer1: FFLocalizations.of(context).getText(
-                                'x8ai5u31' /*  */,
-                              ),
+                                  'Descubre si el Reto es para ti y tu tipo de cabello ',
+                              answer1: '',
                               answer2: FFLocalizations.of(context).getText(
                                 'hjp0vvi2' /*  */,
                               ),
@@ -260,9 +258,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                           model: _model.typeSingleChoiceQuestionLargeImageModel,
                           updateCallback: () => safeSetState(() {}),
                           child: SingleChoiceQuestionLargeImageWidget(
-                            question: FFLocalizations.of(context).getText(
-                              'g2q0w5rd' /* Which hair type do you have? */,
-                            ),
+                            question: '¿Qué tipo de cabello tienes?',
                             subQuestion: FFLocalizations.of(context).getText(
                               'bdqv46ra' /*  */,
                             ),
@@ -297,9 +293,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                           model: _model.ageSingleChoiceQuestionSmalllmageModel,
                           updateCallback: () => safeSetState(() {}),
                           child: SingleChoiceQuestionSmalllmageWidget(
-                            question: FFLocalizations.of(context).getText(
-                              'uaeia9o3' /* How old are you? */,
-                            ),
+                            question: '¿Cuántos años tienes?',
                             subQuestion: FFLocalizations.of(context).getText(
                               'zf9jz0od' /*  */,
                             ),
@@ -336,11 +330,10 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                               _model.concernSingleChoiceQuestionSmalllmageModel,
                           updateCallback: () => safeSetState(() {}),
                           child: SingleChoiceQuestionSmalllmageWidget(
-                            question: FFLocalizations.of(context).getText(
-                              '15jpp8px' /* What is your biggest hair conc... */,
-                            ),
+                            question:
+                                '¿Qué es lo que más te preocupa de tu cabello en este momento?',
                             subQuestion: FFLocalizations.of(context).getText(
-                              'onimc71u' /*  Select one */,
+                              'onimc71u' /* Elige una */,
                             ),
                             answerList: FFAppState().hairConcern,
                             questionId: '',
@@ -376,7 +369,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                           updateCallback: () => safeSetState(() {}),
                           child: QuestionAnswerWidget(
                             question:
-                                'For how long have you been experiencing ${valueOrDefault<String>(
+                                '¿Cuánto tiempo llevas con${valueOrDefault<String>(
                               () {
                                 if (FFAppState()
                                     .quizProfile
@@ -385,7 +378,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                       questionId: 'hairConcern',
                                       answerIds: ['concern_hairloss'],
                                     ))) {
-                                  return 'hair loss or thinning?';
+                                  return 'caída del cabello o adelgazamiento?';
                                 } else if (FFAppState()
                                     .quizProfile
                                     .qaPairs
@@ -393,7 +386,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                       questionId: 'hairConcern',
                                       answerIds: ['concern_splitends'],
                                     ))) {
-                                  return ' frizz and dryness?';
+                                  return 'frizz y sequedad?';
                                 } else if (FFAppState()
                                     .quizProfile
                                     .qaPairs
@@ -401,7 +394,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                       questionId: 'hairConcern',
                                       answerIds: ['concern_scalp'],
                                     ))) {
-                                  return 'scalp issues?';
+                                  return 'problemas en el cuero cabelludo?';
                                 } else if (FFAppState()
                                     .quizProfile
                                     .qaPairs
@@ -409,9 +402,9 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                       questionId: 'hairConcern',
                                       answerIds: ['concern_damage'],
                                     ))) {
-                                  return 'damaged hair?';
+                                  return 'cabello dañado?';
                                 } else {
-                                  return 'these hair issues?';
+                                  return 'estos problemas con tu cabello?';
                                 }
                               }(),
                               'For how long have you been experiencing your hair issues?',
@@ -444,9 +437,8 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                           model: _model.routineTitlesAndDescriptionAnsBodyModel,
                           updateCallback: () => safeSetState(() {}),
                           child: TitlesAndDescriptionAnsBodyWidget(
-                            question: FFLocalizations.of(context).getText(
-                              'zaokmujb' /* What best describes your curre... */,
-                            ),
+                            question:
+                                '¿Cómo describirías mejor tu rutina actual de cuidado del cabello?',
                             description: FFLocalizations.of(context).getText(
                               'dp0mkedt' /*  */,
                             ),
@@ -502,18 +494,12 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                               .hairqareMethodSingleChoiceQuestionSmalllmageModel,
                           updateCallback: () => safeSetState(() {}),
                           child: SingleChoiceQuestionSmalllmageWidget(
-                            question: FFLocalizations.of(context).getText(
-                              'm7uh7oex' /* How familiar are you with Hair... */,
-                            ),
-                            subQuestion: FFLocalizations.of(context).getText(
-                              '646rpwwb' /*  */,
-                            ),
+                            question:
+                                '¿Qué tan familiarizado estás con HairQare y con nuestro enfoque de cuidado holístico del cabello?',
+                            subQuestion: '',
                             questionId: 'hairqare',
                             showBeforeQuestionTitle: false,
-                            beforeQuestionTitle:
-                                FFLocalizations.of(context).getText(
-                              'rn48g3to' /*  */,
-                            ),
+                            beforeQuestionTitle: '',
                             answerList: FFAppState().hairqareKnowledge,
                             answerAction: () async {
                               FFAppState().updateQuizProfileStruct(
@@ -541,30 +527,17 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                           model: _model.pitchBodyTextImagesHolisticModel,
                           updateCallback: () => safeSetState(() {}),
                           child: PitchBodyDetailedTextImagesWidget(
-                            title: FFLocalizations.of(context).getText(
-                              'g791wwh4' /* Beautiful hair needs more than... */,
-                            ),
-                            description: FFLocalizations.of(context).getText(
-                              '5begehn5' /* Our evidence-based programs ar... */,
-                            ),
-                            claim: FFLocalizations.of(context).getText(
-                              'dnzs3t47' /* Clinically proven to restore h... */,
-                            ),
-                            valueProp: FFLocalizations.of(context).getText(
-                              's3viwwxq' /* Proven Results for: */,
-                            ),
-                            value1: FFLocalizations.of(context).getText(
-                              'dhw0xi88' /* Any hair concern  */,
-                            ),
-                            value2: FFLocalizations.of(context).getText(
-                              'vyzhveff' /* Any age */,
-                            ),
-                            value3: FFLocalizations.of(context).getText(
-                              't05pit2o' /* Any hair type */,
-                            ),
-                            value4: FFLocalizations.of(context).getText(
-                              'kuvd0wnn' /* Any hair goal */,
-                            ),
+                            title:
+                                'Un cabello hermoso necesita algo más que solo productos.',
+                            description:
+                                'Nuestros programas basados en evidencia son desarrollados por Sarah Tran, una especialista certificada en caída del cabello, junto con un equipo de investigadores, científicos de formulación y profesionales médicos.',
+                            claim:
+                                'Demostrado clínicamente para restablecer el equilibrio de los folículos capilares de forma rápida y permanente.',
+                            valueProp: 'Resultados comprobados para cualquier:',
+                            value1: 'Edad',
+                            value2: 'Problema de cabello',
+                            value3: 'Tipo de cabello',
+                            value4: 'Objetivo de cabello',
                             navigationTap: () async {
                               await actions.trackGAEvent(
                                 'Continued From Pitch',
@@ -585,17 +558,13 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                           model: _model.dietSingleChoiceQuestionSmalllmageModel,
                           updateCallback: () => safeSetState(() {}),
                           child: SingleChoiceQuestionSmalllmageWidget(
-                            question: FFLocalizations.of(context).getText(
-                              'khaadglv' /* What best describes your diet? */,
-                            ),
+                            question: '¿Cuál describe mejor tu dieta?',
                             subQuestion: '',
                             answerList: FFAppState().diet,
                             questionId: '',
                             showBeforeQuestionTitle: true,
                             beforeQuestionTitle:
-                                FFLocalizations.of(context).getText(
-                              'x3t83a7y' /* What we eat affects our hair g... */,
-                            ),
+                                'Lo que comemos afecta el crecimiento y la salud de nuestro cabello.',
                             answerAction: () async {
                               FFAppState().updateQuizProfileStruct(
                                 (e) => e
@@ -622,9 +591,8 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                           model: _model.spendQuestionAnswerAdditionlInfoModel,
                           updateCallback: () => safeSetState(() {}),
                           child: QuestionAnswerAdditionlInfoWidget(
-                            question: FFLocalizations.of(context).getText(
-                              '25wr54y6' /* How much do you spend on a bot... */,
-                            ),
+                            question:
+                                '¿Cuánto gastas en una botella de champú?',
                             answerList: FFAppState().shampooSpending,
                             answerAction: () async {
                               FFAppState().updateQuizProfileStruct(
@@ -665,9 +633,8 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                               .mythsMultiChoiceWithImageQuestionCheckBoxModel,
                           updateCallback: () => safeSetState(() {}),
                           child: MultiChoiceWithImageQuestionCheckBoxWidget(
-                            question: FFLocalizations.of(context).getText(
-                              'rihaqphi' /* Which of these hair care myths... */,
-                            ),
+                            question:
+                                '¿En cuál de estos mitos sobre el cuidado del cabello crees?',
                             answerList: FFAppState().hairMyth,
                             questionId: 'hairMyth',
                             navigationTap: () async {
@@ -698,7 +665,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                           updateCallback: () => safeSetState(() {}),
                           child: MultiChoiceWithImageQuestionCheckBoxWidget(
                             question: FFLocalizations.of(context).getText(
-                              'ugf9xggr' /* Select the damaging practices ... */,
+                              'ugf9xggr' /* Selecciona las prácticas dañin... */,
                             ),
                             answerList: FFAppState().hairDamageActivity,
                             questionId: 'hairDamageActivity',
@@ -730,12 +697,12 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                           updateCallback: () => safeSetState(() {}),
                           child: SingleChoiceQuestionSmalllmageWidget(
                             question:
-                                'How would you describe your hair problems?',
+                                '¿Cómo describirías tus problemas de cabello?',
                             subQuestion: '',
                             questionId: 'problemDescription',
                             showBeforeQuestionTitle: false,
                             beforeQuestionTitle:
-                                'Understanding your unique hair is key',
+                                'Comprender tu tipo cabello es la clave.',
                             answerList: FFAppState().problemDescription,
                             answerAction: () async {
                               FFAppState().updateQuizProfileStruct(
@@ -784,7 +751,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                             'problemDescription_1consistent'
                                           ],
                                         ))) {
-                                  return 'This persistent hair loss shows your hair follicles are stuck in a shutdown syndrome.';
+                                  return 'Esta caída de cabello persistente demuestra que tus folículos capilares están atrapados en un síndrome de apagado.';
                                 } else if (FFAppState()
                                         .quizProfile
                                         .qaPairs
@@ -801,7 +768,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                             'problemDescription_keep-changing'
                                           ],
                                         ))) {
-                                  return 'This escalating hair loss indicates a shutdown syndrome, spreading all over your hair follicles.';
+                                  return 'Esta caída de cabello cada vez mayor indica un síndrome de cierre, que se está extendiendo por todos tus folículos capilares.';
                                 } else if (FFAppState()
                                         .quizProfile
                                         .qaPairs
@@ -818,7 +785,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                             'problemDescription_come&go'
                                           ],
                                         ))) {
-                                  return 'This unpredictable hair loss shows your hair follicles are stuck in a shutdown syndrome.';
+                                  return 'Esta caída de cabello impredecible demuestra que tus folículos capilares están atrapados en un síndrome de apagado.';
                                 } else if (FFAppState()
                                         .quizProfile
                                         .qaPairs
@@ -835,7 +802,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                             'problemDescription_multiply'
                                           ],
                                         ))) {
-                                  return 'Each new hair issues indicates a shutdown syndrome that is spreading all over your hair follicles.';
+                                  return 'Cada nuevo problema capilar es señal de un síndrome de apagado que se está propagando por todos tus folículos capilares.';
                                 } else if (FFAppState()
                                         .quizProfile
                                         .qaPairs
@@ -852,7 +819,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                             'problemDescription_1consistent'
                                           ],
                                         ))) {
-                                  return 'This persistent hair damage shows your follicles are stuck producing weak hair.';
+                                  return 'Este daño capilar persistente muestra que tus folículos capilares siguen produciendo cabello débil.';
                                 } else if (FFAppState()
                                         .quizProfile
                                         .qaPairs
@@ -869,7 +836,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                             'problemDescription_keep-changing'
                                           ],
                                         ))) {
-                                  return 'Your escalating hair damage means your follicles are producing weaker hair over time.';
+                                  return 'El daño capilar que va en aumento significa que tus folículos están produciendo un cabello cada vez más débil.';
                                 } else if (FFAppState()
                                         .quizProfile
                                         .qaPairs
@@ -886,7 +853,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                             'problemDescription_come&go'
                                           ],
                                         ))) {
-                                  return 'This unpredictable damage pattern shows your follicles are inconsistently malfunctioning.';
+                                  return 'Este patrón de daño impredecible muestra que tus folículos están funcionando de forma irregular.';
                                 } else if (FFAppState()
                                         .quizProfile
                                         .qaPairs
@@ -903,7 +870,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                             'problemDescription_multiply'
                                           ],
                                         ))) {
-                                  return 'Each new texture issue proves your follicles\' production system is breaking down further.';
+                                  return 'Cada nuevo problema de textura demuestra que el sistema de producción de tus folículos capilares se está descomponiendo aún más.';
                                 } else if (FFAppState()
                                         .quizProfile
                                         .qaPairs
@@ -920,7 +887,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                             'problemDescription_1consistent'
                                           ],
                                         ))) {
-                                  return 'This persistent scalp problem shows your hair follicles are stuck in chronic inflammation.';
+                                  return 'Este problema persistente del cuero cabelludo demuestra que tus folículos capilares están atrapados en una inflamación crónica.';
                                 } else if (FFAppState()
                                         .quizProfile
                                         .qaPairs
@@ -937,7 +904,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                             'problemDescription_keep-changing'
                                           ],
                                         ))) {
-                                  return 'The escalating scalp issues show that the inflammation is spreading.';
+                                  return 'Los problemas en el cuero cabelludo que van en aumento muestran que la inflamación se está propagando.';
                                 } else if (FFAppState()
                                         .quizProfile
                                         .qaPairs
@@ -954,7 +921,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                             'problemDescription_come&go'
                                           ],
                                         ))) {
-                                  return 'This unpredictable scalp pattern shows your hair follicles are in an unstable, reactive state.';
+                                  return 'Este patrón impredecible del cuero cabelludo demuestra que tus folículos capilares están en un estado inestable y reactivo.';
                                 } else if (FFAppState()
                                         .quizProfile
                                         .qaPairs
@@ -971,7 +938,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                             'problemDescription_multiply'
                                           ],
                                         ))) {
-                                  return 'Each new scalp issue proves the inflammation is spreading to affect more hair follicle functions.';
+                                  return 'Cada nuevo problema en el cuero cabelludo demuestra que la inflamación se está extendiendo y está afectando más funciones de los folículos capilares.';
                                 } else if (FFAppState()
                                         .quizProfile
                                         .qaPairs
@@ -988,7 +955,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                             'problemDescription_1consistent'
                                           ],
                                         ))) {
-                                  return 'This persistent mix of problems shows your  hair follicles are chronically overwhelmed.';
+                                  return 'Esta persistente mezcla de problemas revela que tus folículos capilares están crónicamente sobrecargados.';
                                 } else if (FFAppState()
                                         .quizProfile
                                         .qaPairs
@@ -1005,7 +972,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                             'problemDescription_keep-changing'
                                           ],
                                         ))) {
-                                  return 'This escalating mixed hair issues shows your hair follicles are getting more overwhelmed over time.';
+                                  return 'Estos problemas capilares mixtos que van en aumento demuestran que tus folículos capilares se están sobrecargando con el tiempo.';
                                 } else if (FFAppState()
                                         .quizProfile
                                         .qaPairs
@@ -1022,7 +989,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                             'problemDescription_come&go'
                                           ],
                                         ))) {
-                                  return 'This mix of problems shows your  hair follicles are chronically overwhelmed.';
+                                  return 'Esta combinación de problemas muestra que tus folículos capilares están crónicamente sobrecargados.';
                                 } else if (FFAppState()
                                         .quizProfile
                                         .qaPairs
@@ -1039,7 +1006,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                             'problemDescription_multiply'
                                           ],
                                         ))) {
-                                  return 'Each new hair issue proves your follicles are getting more overwhelmed and losing control. ';
+                                  return 'Cada nuevo problema capilar demuestra que tus folículos se están sobrecargando y perdiendo el control.';
                                 } else if (FFAppState()
                                         .quizProfile
                                         .qaPairs
@@ -1056,7 +1023,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                             'problemDescription_1consistent'
                                           ],
                                         ))) {
-                                  return 'This persistent hair damage shows your follicles are stuck producing weak hair.';
+                                  return 'Este daño capilar persistente demuestra que tus folículos están atrapados produciendo cabello débil.';
                                 } else if (FFAppState()
                                         .quizProfile
                                         .qaPairs
@@ -1073,7 +1040,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                             'problemDescription_keep-changing'
                                           ],
                                         ))) {
-                                  return 'Your escalating hair damage means your follicles are producing weaker hair over time.';
+                                  return 'El daño capilar que va en aumento hace que tus folículos produzcan cabello más débil con el tiempo.';
                                 } else if (FFAppState()
                                         .quizProfile
                                         .qaPairs
@@ -1090,7 +1057,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                             'problemDescription_come&go'
                                           ],
                                         ))) {
-                                  return 'This unpredictable damage pattern shows your follicles are inconsistently malfunctioning.';
+                                  return 'Este patrón de daño impredecible muestra que tus folículos capilares están funcionando de manera irregular.';
                                 } else if (FFAppState()
                                         .quizProfile
                                         .qaPairs
@@ -1107,16 +1074,16 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                             'problemDescription_multiply'
                                           ],
                                         ))) {
-                                  return 'Each new texture issue proves your follicles\' production system is breaking down further.';
+                                  return 'Cada nuevo problema de textura demuestra que el sistema de producción de tus folículos capilares se está deteriorando aún más.';
                                 } else {
-                                  return 'This mix of problems shows your  hair follicles are chronically overwhelmed.';
+                                  return 'Esta mezcla de problemas muestra que tus folículos capilares están crónicamente sobrecargados.';
                                 }
                               }(),
                               'This persistent mix of problems shows your  hair follicles are chronically overwhelmed.',
                             ),
                             claim: '',
                             valueProp: FFLocalizations.of(context).getText(
-                              'xgrtm968' /* Here is what you can achieve i... */,
+                              'xgrtm968' /* Esto es lo que puedes lograr e... */,
                             ),
                             value1: FFLocalizations.of(context).getText(
                               'runyv089' /*  */,
@@ -1139,7 +1106,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                     questionId: 'hairConcern',
                                     answerIds: ['concern_hairloss'],
                                   ))) {
-                                return 'HIJACKED FOLLICLES';
+                                return 'FOLÍCULOS CAPILARES SECUESTRADOS';
                               } else if (FFAppState()
                                   .quizProfile
                                   .qaPairs
@@ -1147,7 +1114,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                     questionId: 'hairConcern',
                                     answerIds: ['concern_damage'],
                                   ))) {
-                                return 'FAULTY FOLLICLES';
+                                return 'FOLICULOS CAPILARES DEFECTUOSOS';
                               } else if (FFAppState()
                                   .quizProfile
                                   .qaPairs
@@ -1155,7 +1122,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                     questionId: 'hairConcern',
                                     answerIds: ['concern_scalp'],
                                   ))) {
-                                return 'INFLAMED FOLLICLES';
+                                return 'FOLICULOS CAPILARES INFLAMADOS';
                               } else if (FFAppState()
                                   .quizProfile
                                   .qaPairs
@@ -1163,7 +1130,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                     questionId: 'hairConcern',
                                     answerIds: ['concern_splitends'],
                                   ))) {
-                                return 'FAULTY FOLLICLES';
+                                return 'FOLICULOS CAPILARES DEFECTUOSOS';
                               } else if (FFAppState()
                                   .quizProfile
                                   .qaPairs
@@ -1171,13 +1138,13 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                     questionId: 'hairConcern',
                                     answerIds: ['concern_mixed'],
                                   ))) {
-                                return 'OVERWORKED FOLLICLES';
+                                return 'FOLÍCULOS CAPILARES SOBRECARGADOS';
                               } else {
-                                return 'OVERWORKED FOLLICLES';
+                                return 'FOLÍCULOS CAPILARES SOBRECARGADOS';
                               }
                             }(),
                             titleLabel: FFLocalizations.of(context).getText(
-                              'miv9wl0i' /* According to your answers, you... */,
+                              'miv9wl0i' /* Según tus respuestas, tu tipo ... */,
                             ),
                             explanationDetail: valueOrDefault<String>(
                               () {
@@ -1197,7 +1164,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                             'problemDescription_1consistent'
                                           ],
                                         ))) {
-                                  return 'Even if you may not feel it, your scalp environment is too hostile for healthy follicle function. So much that your follicles have to shutdown and shed hair as self-protection. All extra care goes to waste, nourishing follicles that have already decided to stop growing.';
+                                  return 'Aunque tal vez no lo sientas, el ambiente de tu cuero cabelludo es demasiado hostil para el funcionamiento saludable de los folículos capilares. Tanto es así que tus folículos tienen que apagarse y soltar cabello como autoprotección. Todo ese cuidado extra se desperdicia, porque estás nutriendo folículos que ya decidieron dejar de crecer.';
                                 } else if (FFAppState()
                                         .quizProfile
                                         .qaPairs
@@ -1214,7 +1181,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                             'problemDescription_keep-changing'
                                           ],
                                         ))) {
-                                  return 'Even if you may not feel it, your scalp environment is becoming too hostile for healthy follicle function. So much that your follicles have to shutdown and shed hair as self-protection. All extra care goes to waste, nourishing follicles that have already decided to stop growing.';
+                                  return 'Aunque no lo sientas, el ambiente de tu cuero cabelludo se está volviendo tan hostil para el funcionamiento de tus folículos capilares, que estos tienen que dejar de trabajar y el cabello se cae como autoprotección. Todo ese cuidado extra termina en vano, alimentando folículos que ya decidieron dejar de crecer.';
                                 } else if (FFAppState()
                                         .quizProfile
                                         .qaPairs
@@ -1231,7 +1198,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                             'problemDescription_come&go'
                                           ],
                                         ))) {
-                                  return 'Even if you may not feel it, your scalp environment is too hostile for healthy follicle function.  So much that your follicles have to shutdown and shed hair as self-protection. All extra care goes to waste, nourishing follicles that desperately want to grow but keep failing to restart.';
+                                  return 'Puede que no lo sientas, pero el ambiente de tu cuero cabelludo es tan hostil para que tus folículos funcionen de forma saludable que se quedan inactivos y el cabello se cae como autoprotección. Todo ese cuidado extra se desperdicia, alimentando folículos que quieren crecer con desesperación, pero no logran volver a empezar.';
                                 } else if (FFAppState()
                                         .quizProfile
                                         .qaPairs
@@ -1248,7 +1215,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                             'problemDescription_multiply'
                                           ],
                                         ))) {
-                                  return 'Even if you may not feel it, your scalp environment is too hostile for your follicles. So much that many follicles have to shutdown one by one their functions as self-protection. All extra care goes to waste, nourishing follicles that have already decided to stop growing.';
+                                  return 'Aunque no lo sientas, el ambiente de tu cuero cabelludo es demasiado hostil para tus folículos capilares. Tanto que muchos folículos tienen que dejar de funcionar, uno por uno, como autoprotección. Todo ese cuidado extra ya no sirve de nada; está nutriendo folículos que ya han decidido dejar de crecer.';
                                 } else if (FFAppState()
                                         .quizProfile
                                         .qaPairs
@@ -1265,7 +1232,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                             'problemDescription_1consistent'
                                           ],
                                         ))) {
-                                  return 'Your hair follicles are like a factory with broken machinery - they\'re still producing hair, but it\'s coming out fragile and defective. This forces you to put in even more effort but get less results.';
+                                  return 'Tus folículos capilares son como una fábrica con maquinaria rota: todavía producen cabello, pero sale frágil y defectuoso. Esto te obliga a esforzarte aún más, pero obtienes menos resultados.';
                                 } else if (FFAppState()
                                         .quizProfile
                                         .qaPairs
@@ -1282,7 +1249,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                             'problemDescription_keep-changing'
                                           ],
                                         ))) {
-                                  return 'your follicles are like a factory with broken machinery - they\'re still producing hair, but it\'s coming out fragile and defective. Each new strand is weaker than the last because the follicle can\'t build proper hair structure anymore.';
+                                  return 'Tus folículos son como una fábrica con maquinaria rota: todavía están produciendo cabello, pero sale frágil y defectuoso. Cada mechón nuevo es más débil que el anterior, porque el folículo ya no puede construir una estructura capilar adecuada.';
                                 } else if (FFAppState()
                                         .quizProfile
                                         .qaPairs
@@ -1299,7 +1266,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                             'problemDescription_come&go'
                                           ],
                                         ))) {
-                                  return 'your follicles are like a factory with broken machinery - they\'re still producing hair, but it\'s coming out fragile and defective. Sometimes the machinery works better than others, giving you good hair days mixed with bad ones.';
+                                  return 'Tus folículos capilares son como una fábrica con maquinaria rota: aún producen cabello, pero sale frágil y con defectos. A veces la maquinaria funciona mejor que otras, y tienes días de pelo bueno mezclados con días malos.';
                                 } else if (FFAppState()
                                         .quizProfile
                                         .qaPairs
@@ -1316,7 +1283,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                             'problemDescription_multiply'
                                           ],
                                         ))) {
-                                  return 'your follicles are like a factory with broken machinery - they\'re still producing hair, but it\'s coming out fragile and defective. As more parts of the production process fail, you get more types of damaged hair piling up.';
+                                  return 'Tus folículos son como una fábrica con maquinaria rota: siguen produciendo cabello, pero sale frágil y defectuoso. A medida que fallan más partes del proceso de producción, se acumulan más tipos de cabello dañado.';
                                 } else if (FFAppState()
                                         .quizProfile
                                         .qaPairs
@@ -1333,7 +1300,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                             'problemDescription_1consistent'
                                           ],
                                         ))) {
-                                  return 'Your scalp environment is hostile to healthy hair growth. All your hair follicles\' energy goes to managing the inflammation (itchiness), overproducing oil and skin (flakes), which hinders healthy hair production.';
+                                  return 'El ambiente de tu cuero cabelludo es hostil para el crecimiento capilar saludable. Toda la energía de tus folículos capilares se concentra en controlar la inflamación (comezón) y en la sobreproducción de grasa y de piel muerta (caspa), lo que dificulta el crecimiento capilar saludable.';
                                 } else if (FFAppState()
                                         .quizProfile
                                         .qaPairs
@@ -1350,7 +1317,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                             'problemDescription_keep-changing'
                                           ],
                                         ))) {
-                                  return 'your scalp environment is hostile to healthy follicle function. Unchecked inflammation pushes your follicles to overproduce oils and skin (flakes) while creating an increasingly toxic environment preventing your follicles to function.';
+                                  return 'El ambiente de tu cuero cabelludo es hostil para el correcto funcionamiento de los folículos. La inflamación descontrolada hace que tus folículos produzcan un exceso de grasa y caspa, mientras crea un ambiente cada vez más tóxico que impide que funcionen.';
                                 } else if (FFAppState()
                                         .quizProfile
                                         .qaPairs
@@ -1367,7 +1334,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                             'problemDescription_come&go'
                                           ],
                                         ))) {
-                                  return 'Your scalp environment is hostile to healthy hair follicle function. Regular inflammation makes your hair follicles overly sensitive, easily triggering flakes and itchiness while hindering healthy hair production.';
+                                  return 'El ambiente de tu cuero cabelludo es hostil para el funcionamiento saludable de los folículos capilares. La inflamación constante hace que tus folículos sean demasiado sensibles, y con facilidad desencadena caspa y comezón, mientras dificulta el crecimiento capilar saludable.';
                                 } else if (FFAppState()
                                         .quizProfile
                                         .qaPairs
@@ -1384,7 +1351,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                             'problemDescription_multiply'
                                           ],
                                         ))) {
-                                  return 'your scalp environment is hostile to healthy follicle function. As inflammation spreads across your scalp, your hair follicles produce always more oils and flakes, creating an increasingly toxic environment preventing your follicles to function.';
+                                  return 'El entorno de tu cuero cabelludo es hostil para el correcto funcionamiento de los folículos capilares. A medida que la inflamación se extiende por el cuero cabelludo, tus folículos producen cada vez más sebo y caspa, creando un ambiente cada vez más tóxico que impide que funcionen.';
                                 } else if (FFAppState()
                                         .quizProfile
                                         .qaPairs
@@ -1401,7 +1368,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                             'problemDescription_1consistent'
                                           ],
                                         ))) {
-                                  return 'your follicles are handling too many problems at once. They\'re spreading their energy too thin, resulting in weak hair growth and/or existing hair prematurely falling out.';
+                                  return 'Tus folículos están lidiando con demasiados problemas a la vez. Están dispersando su energía en exceso, lo que provoca un crecimiento débil del cabello y/o la caída prematura del que ya tienes.';
                                 } else if (FFAppState()
                                         .quizProfile
                                         .qaPairs
@@ -1418,7 +1385,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                             'problemDescription_keep-changing'
                                           ],
                                         ))) {
-                                  return 'your follicles are trying to handle too many problems at once. As they get more exhausted, they start failing at everything - making all your problems worse simultaneously.';
+                                  return 'Tus folículos capilares están tratando de lidiar con demasiados problemas a la vez. A medida que se van agotando, empiezan a fallar en todo, y eso hace que todos tus problemas empeoren al mismo tiempo.';
                                 } else if (FFAppState()
                                         .quizProfile
                                         .qaPairs
@@ -1435,7 +1402,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                             'problemDescription_come&go'
                                           ],
                                         ))) {
-                                  return 'your follicles are handing too many problems at once and never get a break. They\'re spreading their energy so thin, resulting in weak hair growth and/or existing hair prematurely falling out.';
+                                  return 'Tus folículos están lidiando con demasiados problemas a la vez y no se toman un respiro. Están repartiendo su energía tan al límite que el crecimiento del cabello se debilita y el cabello que ya tienes se cae prematuramente.';
                                 } else if (FFAppState()
                                         .quizProfile
                                         .qaPairs
@@ -1452,7 +1419,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                             'problemDescription_multiply'
                                           ],
                                         ))) {
-                                  return 'your follicles handle too many problems at once. As they get more exhausted, they let more hair fall, grow weaker strands, causing new problems to pile on top of existing ones.';
+                                  return 'Tus folículos capilares están lidiando con demasiados problemas al mismo tiempo. A medida que se van agotando, dejan que caiga más cabello, salen mechones más débiles y eso provoca que aparezcan nuevos problemas que se acumulan sobre los ya existentes.';
                                 } else if (FFAppState()
                                         .quizProfile
                                         .qaPairs
@@ -1469,7 +1436,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                             'problemDescription_1consistent'
                                           ],
                                         ))) {
-                                  return 'Your hair follicles are like a factory with broken machinery - they\'re still producing hair, but it\'s coming out fragile and defective. This forces you to put in even more effort but get less results.';
+                                  return 'Tus folículos capilares son como una fábrica con maquinaria rota: siguen produciendo cabello, pero sale frágil y defectuoso. Esto te obliga a esforzarte aún más, pero obtienes menos resultados.';
                                 } else if (FFAppState()
                                         .quizProfile
                                         .qaPairs
@@ -1486,7 +1453,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                             'problemDescription_keep-changing'
                                           ],
                                         ))) {
-                                  return 'your follicles are like a factory with broken machinery - they\'re still producing hair, but it\'s coming out fragile and defective. Each new strand is weaker than the last because the follicle can\'t build proper hair structure anymore.';
+                                  return 'Tus folículos capilares son como una fábrica con maquinaria rota: todavía producen cabello, pero cada mechón sale frágil y defectuoso. Cada mechón nuevo es más débil que la anterior, porque los folículos ya no pueden construir una estructura capilar adecuada.';
                                 } else if (FFAppState()
                                         .quizProfile
                                         .qaPairs
@@ -1503,7 +1470,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                             'problemDescription_come&go'
                                           ],
                                         ))) {
-                                  return 'your follicles are like a factory with broken machinery - they\'re still producing hair, but it\'s coming out fragile and defective. Sometimes the machinery works better than others, giving you good hair days mixed with bad ones.';
+                                  return 'Tus folículos capilares son como una fábrica con maquinaria rota: siguen produciendo cabello, pero sale frágil y defectuoso. A veces la maquinaria funciona mejor que otras, y te deja días de buen cabello mezclados con días malos.';
                                 } else if (FFAppState()
                                         .quizProfile
                                         .qaPairs
@@ -1520,9 +1487,9 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                             'problemDescription_multiply'
                                           ],
                                         ))) {
-                                  return 'your follicles are like a factory with broken machinery - they\'re still producing hair, but it\'s coming out fragile and defective. As more parts of the production process fail, you get more types of damaged hair piling up.';
+                                  return 'Tus folículos capilares son como una fábrica con maquinaria rota: todavía están produciendo cabello, pero lo que sale es frágil y defectuoso. A medida que fallan más piezas del proceso de producción, se acumulan más tipos de cabello dañado.';
                                 } else {
-                                  return 'your follicles are handing too many problems at once and never get a break. They\'re spreading their energy so thin, resulting in weak hair growth and/or existing hair prematurely falling out.';
+                                  return 'Tus folículos están lidiando con demasiados problemas a la vez y no se toman un respiro. Están repartiendo su energía tan al límite que el crecimiento del cabello se debilita y el cabello que ya tienes se cae prematuramente.';
                                 }
                               }(),
                               'Your follicles are trying to handle too many problems at once. They\'re spreading their energy too thin across multiple issues, so they can\'t fully resolve any single problem. ',
@@ -1548,9 +1515,8 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                               .originProblemMultiChoiceWithImageQuestionCheckBoxModel,
                           updateCallback: () => safeSetState(() {}),
                           child: MultiChoiceWithImageQuestionCheckBoxWidget(
-                            question: FFLocalizations.of(context).getText(
-                              'o3yak32t' /* Have you experienced any of th... */,
-                            ),
+                            question:
+                                '¿Has experimentado alguno de los siguientes en los últimos 6 meses?',
                             questionId: 'originProblen',
                             answerList: FFAppState().originProblem,
                             navigationTap: () async {
@@ -1579,12 +1545,10 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                           model: _model.mirrorRatingQuestionOptionsModel,
                           updateCallback: () => safeSetState(() {}),
                           child: RatingQuestionOptionsWidget(
-                            question: FFLocalizations.of(context).getText(
-                              'vazebtnl' /* My reflection in the mirror af... */,
-                            ),
-                            subQuestion: FFLocalizations.of(context).getText(
-                              'ltw8dxc6' /* How much do you relate to the ... */,
-                            ),
+                            question:
+                                'Mi reflejo en el espejo afecta mi estado de ánimo y mi autoestima.',
+                            subQuestion:
+                                '¿Qué tanto te identificas con la siguiente afirmación?',
                             questionId: 'confidence',
                             buttonAction: () async {
                               await actions.trackGAEvent(
@@ -1624,12 +1588,10 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                           model: _model.compareRatingQuestionOptionsModel,
                           updateCallback: () => safeSetState(() {}),
                           child: RatingQuestionOptionsWidget(
-                            question: FFLocalizations.of(context).getText(
-                              'zcjftwlh' /* I tend to compare my hair to o... */,
-                            ),
-                            subQuestion: FFLocalizations.of(context).getText(
-                              'j1jzv4xz' /* How much do you relate to the ... */,
-                            ),
+                            question:
+                                'Suelo comparar mi cabello con el de otras personas y eso me frustra.',
+                            subQuestion:
+                                '¿Qué tanto te identificas con la siguiente afirmación?',
                             questionId: 'comparison',
                             buttonAction: () async {
                               await actions.trackGAEvent(
@@ -1669,9 +1631,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                           model: _model.professionalQuestionAnswerModel,
                           updateCallback: () => safeSetState(() {}),
                           child: QuestionAnswerWidget(
-                            question: FFLocalizations.of(context).getText(
-                              'hoc1sdcs' /* Did a professional refer you t... */,
-                            ),
+                            question: '¿Fuiste referida por un profesional?',
                             answerList: FFAppState().professionalReferral,
                             answerAction: () async {
                               FFAppState().updateQuizProfileStruct(
@@ -1700,7 +1660,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                           updateCallback: () => safeSetState(() {}),
                           child: LoadingScreenBeforeResultWidget(
                             title: FFLocalizations.of(context).getText(
-                              '44639e0e' /* Creating your personalized hai... */,
+                              '44639e0e' /* Creando tu programa de cuidado... */,
                             ),
                             carouselImageList: FFAppState().imageList,
                             checkPointList: FFAppState().beforeLoadingData,
@@ -1718,7 +1678,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                           child: LoginComponentWidget(
                             progressBarValue: 90.0,
                             concernResolutionChance: valueOrDefault<String>(
-                              'Probability to fix your ${valueOrDefault<String>(
+                              'Probabilidad de que arregles tu${valueOrDefault<String>(
                                 () {
                                   if (FFAppState()
                                       .quizProfile
@@ -1727,7 +1687,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                         questionId: 'hairConcern',
                                         answerIds: ['concern_hairloss'],
                                       ))) {
-                                    return 'hair loss';
+                                    return 'caída del cabello';
                                   } else if (FFAppState()
                                       .quizProfile
                                       .qaPairs
@@ -1735,7 +1695,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                         questionId: 'hairConcern',
                                         answerIds: ['concern_splitends'],
                                       ))) {
-                                    return 'split-ends';
+                                    return 'puntas abiertas';
                                   } else if (FFAppState()
                                       .quizProfile
                                       .qaPairs
@@ -1743,7 +1703,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                         questionId: 'hairConcern',
                                         answerIds: ['concern_scalp'],
                                       ))) {
-                                    return 'scalp issues';
+                                    return 'problemas del cuero cabelludo';
                                   } else if (FFAppState()
                                       .quizProfile
                                       .qaPairs
@@ -1751,13 +1711,13 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                         questionId: 'hairConcern',
                                         answerIds: ['concern_damage'],
                                       ))) {
-                                    return 'damaged hair';
+                                    return 'cabello dañado';
                                   } else {
-                                    return 'hair problems';
+                                    return 'Problemas del cabello';
                                   }
                                 }(),
                                 'hair problems',
-                              )} in 14 days:',
+                              )} en 14 días:',
                               'Probability to reduce your hair problems in 14 days',
                             ),
                             submitAction: () async {
@@ -1800,6 +1760,9 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                               'k5vkwbbc' /* test */,
                             ),
                             startDate: getCurrentTimestamp,
+                            subHeading: FFLocalizations.of(context).getText(
+                              'iid43xdb' /* ¡Eres la candidata perfecta pa... */,
+                            ),
                             startMyChallengeAction: () async {
                               FFAppState().showResultPageredirectLoader = true;
                               safeSetState(() {});

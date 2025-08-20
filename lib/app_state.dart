@@ -64,9 +64,9 @@ class FFAppState extends ChangeNotifier {
   }
 
   List<String> _beforeLoadingData = [
-    'Checking your hair condition',
-    'Analysing your routine',
-    'Checking your challenge-fit'
+    'Revisando la condición de tu cabello',
+    'Analizando tu rutina',
+    'Comprobando si el reto es para ti'
   ];
   List<String> get beforeLoadingData => _beforeLoadingData;
   set beforeLoadingData(List<String> value) {
@@ -282,15 +282,15 @@ class FFAppState extends ChangeNotifier {
 
   List<ImageAnswerStruct> _hairConcern = [
     ImageAnswerStruct.fromSerializableMap(jsonDecode(
-        '{\"image\":\"https://assets.hairqare.co/Q3%20Hair%20loss.webp\",\"answer\":\"Hair loss or hair thinning\",\"id\":\"concern_hairloss\",\"type\":\"hairConcern\"}')),
+        '{\"image\":\"https://assets.hairqare.co/Q3%20Hair%20loss.webp\",\"answer\":\"Caída del cabello o adelgazamiento del cabello\",\"id\":\"concern_hairloss\",\"type\":\"hairConcern\"}')),
     ImageAnswerStruct.fromSerializableMap(jsonDecode(
-        '{\"image\":\"https://assets.hairqare.co/Q3%20Damage%20Hair.webp\",\"answer\":\"Damage from dye, heat, or chemical treatments\",\"id\":\"concern_damage\",\"type\":\"hairConcern\"}')),
+        '{\"image\":\"https://assets.hairqare.co/Q3%20Damage%20Hair.webp\",\"answer\":\"Daño por tinte, calor o tratamientos químicos\",\"id\":\"concern_damage\",\"type\":\"hairConcern\"}')),
     ImageAnswerStruct.fromSerializableMap(jsonDecode(
-        '{\"image\":\"https://assets.hairqare.co/Q3%20Irritation.webp\",\"answer\":\"Scalp irritation or dandruff\",\"id\":\"concern_scalp\",\"type\":\"hairConcern\"}')),
+        '{\"image\":\"https://assets.hairqare.co/Q3%20Irritation.webp\",\"answer\":\"Irritación del cuero cabelludo o caspa\",\"id\":\"concern_scalp\",\"type\":\"hairConcern\"}')),
     ImageAnswerStruct.fromSerializableMap(jsonDecode(
-        '{\"image\":\"https://assets.hairqare.co/Q3%20Split%20ends.webp\",\"answer\":\"Split ends, frizz, and dryness\",\"id\":\"concern_splitends\",\"type\":\"hairConcern\"}')),
+        '{\"image\":\"https://assets.hairqare.co/Q3%20Split%20ends.webp\",\"answer\":\"Puntas abiertas, frizz y sequedad\",\"id\":\"concern_splitends\",\"type\":\"hairConcern\"}')),
     ImageAnswerStruct.fromSerializableMap(jsonDecode(
-        '{\"image\":\"https://assets.hairqare.co/Q3%20other.webp\",\"answer\":\"Other, mixed issues\",\"id\":\"concern_mixed\",\"type\":\"hairConcern\"}'))
+        '{\"image\":\"https://assets.hairqare.co/Q3%20other.webp\",\"answer\":\"Otros, problemas mixtos\",\"id\":\"concern_mixed\",\"type\":\"hairConcern\"}'))
   ];
   List<ImageAnswerStruct> get hairConcern => _hairConcern;
   set hairConcern(List<ImageAnswerStruct> value) {
@@ -565,11 +565,11 @@ class FFAppState extends ChangeNotifier {
   /// Do you know if you have follicle dysfunction
   List<AnswerStruct> _diagnosisFD = [
     AnswerStruct.fromSerializableMap(jsonDecode(
-        '{\"answer\":\"Yes\",\"image\":\"https://assets.hairqare.co/mid-hairloss-graphic.webp\",\"id\":\"diagnosisFD_yes\",\"type\":\"diagnosisFD\"}')),
+        '{\"answer\":\"Sí\",\"image\":\"https://assets.hairqare.co/mid-hairloss-graphic.webp\",\"id\":\"diagnosisFD_yes\",\"type\":\"diagnosisFD\"}')),
     AnswerStruct.fromSerializableMap(jsonDecode(
         '{\"answer\":\"No\",\"image\":\"https://assets.hairqare.co/mid-hair-graphic.webp\",\"id\":\"diagnosisFD_no\",\"type\":\"diagnosisFD\"}')),
     AnswerStruct.fromSerializableMap(jsonDecode(
-        '{\"answer\":\"I don\'t know\",\"image\":\"https://picsum.photos/seed/682/600\",\"id\":\"diagnosisFD_dontknow\",\"type\":\"diagnosisFD\"}'))
+        '{\"answer\":\"No sé\",\"image\":\"https://picsum.photos/seed/682/600\",\"id\":\"diagnosisFD_dontknow\",\"type\":\"diagnosisFD\"}'))
   ];
   List<AnswerStruct> get diagnosisFD => _diagnosisFD;
   set diagnosisFD(List<AnswerStruct> value) {
@@ -601,15 +601,15 @@ class FFAppState extends ChangeNotifier {
 
   List<ImageAnswerStruct> _hairType = [
     ImageAnswerStruct.fromSerializableMap(jsonDecode(
-        '{\"image\":\"https://assets.hairqare.co/Straight%20Hair%20.webp\",\"answer\":\"Straight\",\"id\":\"hairType_straight\",\"type\":\"hairType\"}')),
+        '{\"image\":\"https://assets.hairqare.co/Straight%20Hair%20.webp\",\"answer\":\"Lacio\",\"id\":\"hairType_straight\",\"type\":\"hairType\"}')),
     ImageAnswerStruct.fromSerializableMap(jsonDecode(
-        '{\"image\":\"https://assets.hairqare.co/Wavy%20Hair.webp\",\"answer\":\"Wavy\",\"id\":\"hairType_wavy\",\"type\":\"hairType\"}')),
+        '{\"image\":\"https://assets.hairqare.co/Wavy%20Hair.webp\",\"answer\":\"Ondulado\",\"id\":\"hairType_wavy\",\"type\":\"hairType\"}')),
     ImageAnswerStruct.fromSerializableMap(jsonDecode(
-        '{\"image\":\"https://assets.hairqare.co/Curly%20Hair.webp\",\"answer\":\"Curly\",\"id\":\"hairType_curly\",\"type\":\"hairType\"}')),
+        '{\"image\":\"https://assets.hairqare.co/Curly%20Hair.webp\",\"answer\":\"Rizado\",\"id\":\"hairType_curly\",\"type\":\"hairType\"}')),
     ImageAnswerStruct.fromSerializableMap(jsonDecode(
-        '{\"image\":\"https://assets.hairqare.co/Coily%20Hair.webp\",\"answer\":\"Coily\",\"id\":\"hairType_coily\",\"type\":\"hairType\"}')),
+        '{\"image\":\"https://assets.hairqare.co/Coily%20Hair.webp\",\"answer\":\"Muy rizado (rizos en espiral muy apretados)\",\"id\":\"hairType_coily\",\"type\":\"hairType\"}')),
     ImageAnswerStruct.fromSerializableMap(jsonDecode(
-        '{\"image\":\"https://assets.hairqare.co/Q1-Not%20Sure.webp\",\"answer\":\"I don\'t know\",\"id\":\"hairType_unknown\",\"type\":\"hairType\"}'))
+        '{\"image\":\"https://assets.hairqare.co/Q1-Not%20Sure.webp\",\"answer\":\"No sé\",\"id\":\"hairType_unknown\",\"type\":\"hairType\"}'))
   ];
   List<ImageAnswerStruct> get hairType => _hairType;
   set hairType(List<ImageAnswerStruct> value) {
@@ -641,13 +641,13 @@ class FFAppState extends ChangeNotifier {
 
   List<ImageAnswerStruct> _age = [
     ImageAnswerStruct.fromSerializableMap(jsonDecode(
-        '{\"image\":\"https://assets.hairqare.co/Age%2018-29.webp\",\"answer\":\"18 - 29\",\"id\":\"age_18to29\",\"type\":\"age\"}')),
+        '{\"image\":\"https://assets.hairqare.co/Age%2018-29.webp\",\"answer\":\"18 a 29 años\",\"id\":\"age_18to29\",\"type\":\"age\"}')),
     ImageAnswerStruct.fromSerializableMap(jsonDecode(
-        '{\"image\":\"https://assets.hairqare.co/Age%2030-39.webp\",\"answer\":\"30 - 39\",\"id\":\"age_30to39\",\"type\":\"age\"}')),
+        '{\"image\":\"https://assets.hairqare.co/Age%2030-39.webp\",\"answer\":\"30 a 39 años\",\"id\":\"age_30to39\",\"type\":\"age\"}')),
     ImageAnswerStruct.fromSerializableMap(jsonDecode(
-        '{\"image\":\"https://assets.hairqare.co/Age%2040-49.webp\",\"answer\":\"40 - 49\",\"id\":\"age_40to49\",\"type\":\"age\"}')),
+        '{\"image\":\"https://assets.hairqare.co/Age%2040-49.webp\",\"answer\":\"40 - 49 años\",\"id\":\"age_40to49\",\"type\":\"age\"}')),
     ImageAnswerStruct.fromSerializableMap(jsonDecode(
-        '{\"image\":\"https://assets.hairqare.co/Age%2050%2B.webp\",\"answer\":\"50 +\",\"id\":\"age_50+\",\"type\":\"age\"}'))
+        '{\"image\":\"https://assets.hairqare.co/Age%2050%2B.webp\",\"answer\":\"50+ años\",\"id\":\"age_50+\",\"type\":\"age\"}'))
   ];
   List<ImageAnswerStruct> get age => _age;
   set age(List<ImageAnswerStruct> value) {
@@ -715,11 +715,11 @@ class FFAppState extends ChangeNotifier {
 
   List<ImageAnswerStruct> _hairqareKnowledge = [
     ImageAnswerStruct.fromSerializableMap(jsonDecode(
-        '{\"image\":\"https://assets.hairqare.co/emoji-1.webp\",\"answer\":\"I’m hearing about it for the first time\",\"id\":\"hairqare_unknown\",\"type\":\"hairqare\"}')),
+        '{\"image\":\"https://assets.hairqare.co/emoji-1.webp\",\"answer\":\"Es la primera vez que escucho acerca de esto\",\"id\":\"hairqare_unknown\",\"type\":\"hairqare\"}')),
     ImageAnswerStruct.fromSerializableMap(jsonDecode(
-        '{\"image\":\"https://assets.hairqare.co/emoji-3.webp\",\"answer\":\"I know a few things\",\"id\":\"hairqare_notunknown\",\"type\":\"hairqare\"}')),
+        '{\"image\":\"https://assets.hairqare.co/emoji-3.webp\",\"answer\":\"Sé algunas cosas\",\"id\":\"hairqare_notunknown\",\"type\":\"hairqare\"}')),
     ImageAnswerStruct.fromSerializableMap(jsonDecode(
-        '{\"image\":\"https://assets.hairqare.co/emoji-2.webp\",\"answer\":\"Yes, I know everything about it\",\"id\":\"hairqare_familiar\",\"type\":\"hairqare\"}'))
+        '{\"image\":\"https://assets.hairqare.co/emoji-2.webp\",\"answer\":\"Sí, sé todo al respecto\",\"id\":\"hairqare_familiar\",\"type\":\"hairqare\"}'))
   ];
   List<ImageAnswerStruct> get hairqareKnowledge => _hairqareKnowledge;
   set hairqareKnowledge(List<ImageAnswerStruct> value) {
@@ -791,15 +791,15 @@ class FFAppState extends ChangeNotifier {
 
   List<ImageAnswerStruct> _diet = [
     ImageAnswerStruct.fromSerializableMap(jsonDecode(
-        '{\"image\":\"https://assets.hairqare.co/Mostly%20unhealthy%20diet.webp\",\"answer\":\"Fast food / Processed food diet\",\"id\":\"diet_processed\",\"type\":\"diet\"}')),
+        '{\"image\":\"https://assets.hairqare.co/Mostly%20unhealthy%20diet.webp\",\"answer\":\"Dieta de comida rápida / comida procesada\",\"id\":\"diet_processed\",\"type\":\"diet\"}')),
     ImageAnswerStruct.fromSerializableMap(jsonDecode(
-        '{\"image\":\"https://assets.hairqare.co/Healthy%20and%20balanced%20diet.webp\",\"answer\":\"Balanced / Whole foods\",\"id\":\"diet_balanced\",\"type\":\"diet\"}')),
+        '{\"image\":\"https://assets.hairqare.co/Healthy%20and%20balanced%20diet.webp\",\"answer\":\"Comidas balanceadas / Alimentos naturales\",\"id\":\"diet_balanced\",\"type\":\"diet\"}')),
     ImageAnswerStruct.fromSerializableMap(jsonDecode(
-        '{\"image\":\"https://assets.hairqare.co/Professional%20planned%20diet.webp\",\"answer\":\"Custom nutrition protocol\",\"id\":\"diet_custom\",\"type\":\"diet\"}')),
+        '{\"image\":\"https://assets.hairqare.co/Professional%20planned%20diet.webp\",\"answer\":\"Protocolo de nutrición personalizado\",\"id\":\"diet_custom\",\"type\":\"diet\"}')),
     ImageAnswerStruct.fromSerializableMap(jsonDecode(
-        '{\"image\":\"https://assets.hairqare.co/Vegan-vegetarian%20diet.webp\",\"answer\":\"Vegan / vegetarian\",\"id\":\"diet_vegan\",\"type\":\"diet\"}')),
+        '{\"image\":\"https://assets.hairqare.co/Vegan-vegetarian%20diet.webp\",\"answer\":\"Vegano/a / vegetariano/a\",\"id\":\"diet_vegan\",\"type\":\"diet\"}')),
     ImageAnswerStruct.fromSerializableMap(jsonDecode(
-        '{\"image\":\"https://assets.hairqare.co/None.webp\",\"answer\":\"Something else\",\"id\":\"diet_other\",\"type\":\"diet\"}'))
+        '{\"image\":\"https://assets.hairqare.co/None.webp\",\"answer\":\"Algo diferente\",\"id\":\"diet_other\",\"type\":\"diet\"}'))
   ];
   List<ImageAnswerStruct> get diet => _diet;
   set diet(List<ImageAnswerStruct> value) {
@@ -831,13 +831,13 @@ class FFAppState extends ChangeNotifier {
 
   List<AnswerWithAdditionalInfoStruct> _shampooSpending = [
     AnswerWithAdditionalInfoStruct.fromSerializableMap(jsonDecode(
-        '{\"answer\":\"Less than \$10\",\"image\":\"https://assets.hairqare.co/Less%20than%20%2410.webp\",\"AnswerTitle\":\"Awesome 🤩 you\'re budget conscious!\",\"AnswerDescription\":\"You can actually have amazing results without spending more than you do now (or even less) while avoiding harmful products that secretly ruin your hair. You just need the right routine for your unique situation.\",\"id\":\"spend_under10\",\"type\":\"shampooSpending\"}')),
+        '{\"answer\":\"Menos de 10 dólares\",\"image\":\"https://assets.hairqare.co/Less%20than%20%2410.webp\",\"AnswerTitle\":\" ¡Genial 🤩, eres de las que cuidan su presupuesto!\",\"AnswerDescription\":\"Puedes obtener resultados increíbles sin gastar más de lo que ya gastas (incluso podrías gastar menos), mientras evitas productos dañinos que, sin que te des cuenta, dañan tu cabello. Solo necesitas la rutina adecuada para tu situación particular.\",\"id\":\"spend_under10\",\"type\":\"shampooSpending\"}')),
     AnswerWithAdditionalInfoStruct.fromSerializableMap(jsonDecode(
-        '{\"answer\":\"\$10 - \$20\",\"image\":\"https://assets.hairqare.co/%2410%20-%20%2420.webp\",\"AnswerTitle\":\"Amazing 🙌 you value your hair!\",\"AnswerDescription\":\"You\'re spending thoughtfully, but likely still paying for marketing rather than results. With the right routine, you could get truly transformative results tailored to your unique needs without spending more.\",\"id\":\"spend_10to20\",\"type\":\"shampooSpending\"}')),
+        '{\"answer\":\"entre \$10 y \$20\",\"image\":\"https://assets.hairqare.co/%2410%20-%20%2420.webp\",\"AnswerTitle\":\"¡Increíble 🙌 valoras tu cabello!\",\"AnswerDescription\":\"Estás gastando con cuidado, pero probablemente aún estás pagando por marketing en lugar de resultados. Con la rutina adecuada, podrías obtener resultados realmente transformadores, hechos a la medida de tus necesidades únicas, sin gastar más.\",\"id\":\"spend_10to20\",\"type\":\"shampooSpending\"}')),
     AnswerWithAdditionalInfoStruct.fromSerializableMap(jsonDecode(
-        '{\"answer\":\"\$20 - \$50\",\"image\":\"https://assets.hairqare.co/%2420-%2450.webp\",\"AnswerTitle\":\"You clearly care about your hair 💜\",\"AnswerDescription\":\"Did you know, in premium haircare up to 90% of what you\'re paying goes to packaging and marketing, not quality ingredients? With the right routine, you can actually get the premium results you\'re looking for without the price tag.\",\"id\":\"spend_20to50\",\"type\":\"shampooSpending\"}')),
+        '{\"answer\":\"de \$20 a \$50\",\"image\":\"https://assets.hairqare.co/%2420-%2450.webp\",\"AnswerTitle\":\"Se nota que te importa mucho tu cabello 💜\",\"AnswerDescription\":\"¿Sabías que, en el cuidado capilar premium, hasta el 90% de lo que pagas va en empaque y marketing, y no a ingredientes de calidad? Con la rutina adecuada, en realidad puedes obtener los resultados premium que buscas sin el costo elevado. \",\"id\":\"spend_20to50\",\"type\":\"shampooSpending\"}')),
     AnswerWithAdditionalInfoStruct.fromSerializableMap(jsonDecode(
-        '{\"answer\":\"More than \$50\",\"image\":\"https://assets.hairqare.co/More%20than%20%2450.webp\",\"AnswerTitle\":\"Your hair deserves the best ✨\",\"AnswerDescription\":\"Did you know premium haircare often uses the same ingredients as budget options? With the right personalized routine, you can actually achieve the results those luxury brands are just promising.\",\"id\":\"spend_over50\",\"type\":\"shampooSpending\"}'))
+        '{\"answer\":\"Más de \$50\",\"image\":\"https://assets.hairqare.co/More%20than%20%2450.webp\",\"AnswerTitle\":\"Tu cabello merece lo mejor ✨\",\"AnswerDescription\":\"¿Sabías que los productos de cuidado capilar premium suelen usar los mismos ingredientes que las opciones más económicas? Con la rutina personalizada adecuada, puedes lograr los resultados que esas marcas de lujo solo prometen.\",\"id\":\"spend_over50\",\"type\":\"shampooSpending\"}'))
   ];
   List<AnswerWithAdditionalInfoStruct> get shampooSpending => _shampooSpending;
   set shampooSpending(List<AnswerWithAdditionalInfoStruct> value) {
@@ -871,15 +871,15 @@ class FFAppState extends ChangeNotifier {
 
   List<MultiChoiceWithImagesCheckBoxStruct> _hairMyth = [
     MultiChoiceWithImagesCheckBoxStruct.fromSerializableMap(jsonDecode(
-        '{\"image\":\"https://assets.hairqare.co/Rosemary%20Oil.webp\",\"title\":\"Rosemary oil is reduces hair loss\",\"checklBox\":\"false\",\"Id\":\"myth_rosemary\",\"type\":\"hairMyth\"}')),
+        '{\"image\":\"https://assets.hairqare.co/Rosemary%20Oil.webp\",\"title\":\"El aceite de romero ayuda a reducir la caída del cabello.\",\"checklBox\":\"false\",\"Id\":\"myth_rosemary\",\"type\":\"hairMyth\"}')),
     MultiChoiceWithImagesCheckBoxStruct.fromSerializableMap(jsonDecode(
-        '{\"image\":\"https://assets.hairqare.co/Coconut%20Oil.webp\",\"title\":\"Coconut oil is the best hair oil\",\"checklBox\":\"false\",\"Id\":\"myth_coconut\",\"type\":\"hairMyth\"}')),
+        '{\"image\":\"https://assets.hairqare.co/Coconut%20Oil.webp\",\"title\":\"El aceite de coco es el mejor aceite para el cabello.\",\"checklBox\":\"false\",\"Id\":\"myth_coconut\",\"type\":\"hairMyth\"}')),
     MultiChoiceWithImagesCheckBoxStruct.fromSerializableMap(jsonDecode(
-        '{\"image\":\"https://assets.hairqare.co/Rice%20Water.webp\",\"title\":\"Rice water makes hair grow faster\",\"checklBox\":\"false\",\"Id\":\"myth_ricewater\",\"type\":\"hairMyth\"}')),
+        '{\"image\":\"https://assets.hairqare.co/Rice%20Water.webp\",\"title\":\"El agua de arroz hace que el cabello crezca más rápido.\",\"checklBox\":\"false\",\"Id\":\"myth_ricewater\",\"type\":\"hairMyth\"}')),
     MultiChoiceWithImagesCheckBoxStruct.fromSerializableMap(jsonDecode(
-        '{\"image\":\"https://assets.hairqare.co/Natural.webp\",\"title\":\"Natural / organic products are better\",\"checklBox\":\"false\",\"Id\":\"myth_organic\",\"type\":\"hairMyth\"}')),
+        '{\"image\":\"https://assets.hairqare.co/Natural.webp\",\"title\":\"Los productos naturales y orgánicos son mejores.\",\"checklBox\":\"false\",\"Id\":\"myth_organic\",\"type\":\"hairMyth\"}')),
     MultiChoiceWithImagesCheckBoxStruct.fromSerializableMap(jsonDecode(
-        '{\"image\":\"https://assets.hairqare.co/Not%20Washing.webp\",\"title\":\"Not washing hair is good for the scalp\",\"checklBox\":\"false\",\"Id\":\"myth_nopoo\",\"type\":\"hairMyth\"}'))
+        '{\"image\":\"https://assets.hairqare.co/Not%20Washing.webp\",\"title\":\"No lavarte el cabello es bueno para tu cuero cabelludo.\",\"checklBox\":\"false\",\"Id\":\"myth_nopoo\",\"type\":\"hairMyth\"}'))
   ];
   List<MultiChoiceWithImagesCheckBoxStruct> get hairMyth => _hairMyth;
   set hairMyth(List<MultiChoiceWithImagesCheckBoxStruct> value) {
@@ -914,15 +914,15 @@ class FFAppState extends ChangeNotifier {
 
   List<MultiChoiceWithImagesCheckBoxStruct> _hairDamageActivity = [
     MultiChoiceWithImagesCheckBoxStruct.fromSerializableMap(jsonDecode(
-        '{\"image\":\"https://assets.hairqare.co/heat.webp\",\"title\":\"Heat styling\",\"checklBox\":\"false\",\"Id\":\"damageAction_heat\",\"type\":\"hairDamageActivity\"}')),
+        '{\"image\":\"https://assets.hairqare.co/heat.webp\",\"title\":\"Peinados a base de calor\",\"checklBox\":\"false\",\"Id\":\"damageAction_heat\",\"type\":\"hairDamageActivity\"}')),
     MultiChoiceWithImagesCheckBoxStruct.fromSerializableMap(jsonDecode(
-        '{\"image\":\"https://assets.hairqare.co/dye.webp\",\"title\":\"Bleaching / hair colouring\",\"checklBox\":\"false\",\"Id\":\"damageAction_dye\",\"type\":\"hairDamageActivity\"}')),
+        '{\"image\":\"https://assets.hairqare.co/dye.webp\",\"title\":\"Decoloración / tinte de cabello\",\"checklBox\":\"false\",\"Id\":\"damageAction_dye\",\"type\":\"hairDamageActivity\"}')),
     MultiChoiceWithImagesCheckBoxStruct.fromSerializableMap(jsonDecode(
-        '{\"image\":\"https://assets.hairqare.co/sun.webp\",\"title\":\"Sun exposure\",\"checklBox\":\"false\",\"Id\":\"damageAction_sun\",\"type\":\"hairDamageActivity\"}')),
+        '{\"image\":\"https://assets.hairqare.co/sun.webp\",\"title\":\"Exposición al sol\",\"checklBox\":\"false\",\"Id\":\"damageAction_sun\",\"type\":\"hairDamageActivity\"}')),
     MultiChoiceWithImagesCheckBoxStruct.fromSerializableMap(jsonDecode(
-        '{\"image\":\"https://assets.hairqare.co/swim.webp\",\"title\":\"Frequent swimming\",\"checklBox\":\"false\",\"Id\":\"damageAction_swimming\",\"type\":\"hairDamageActivity\"}')),
+        '{\"image\":\"https://assets.hairqare.co/swim.webp\",\"title\":\"Nadar con frecuencia\",\"checklBox\":\"false\",\"Id\":\"damageAction_swimming\",\"type\":\"hairDamageActivity\"}')),
     MultiChoiceWithImagesCheckBoxStruct.fromSerializableMap(jsonDecode(
-        '{\"image\":\"https://assets.hairqare.co/hairstyle.webp\",\"title\":\"Tight hair styles (braids, bun, ponytail...)\",\"checklBox\":\"false\",\"Id\":\"damageAction_hairstyles\",\"type\":\"hairDamageActivity\"}'))
+        '{\"image\":\"https://assets.hairqare.co/hairstyle.webp\",\"title\":\"Peinados ajustados (trenzas, chongo, cola de caballo...)\",\"checklBox\":\"false\",\"Id\":\"damageAction_hairstyles\",\"type\":\"hairDamageActivity\"}'))
   ];
   List<MultiChoiceWithImagesCheckBoxStruct> get hairDamageActivity =>
       _hairDamageActivity;
@@ -958,11 +958,11 @@ class FFAppState extends ChangeNotifier {
 
   List<AnswerStruct> _professionalReferral = [
     AnswerStruct.fromSerializableMap(jsonDecode(
-        '{\"answer\":\"Yes\",\"image\":\"\",\"id\":\"professional_yes\",\"type\":\"professionalReferral\"}')),
+        '{\"answer\":\"¡Sí!\",\"image\":\"\",\"id\":\"professional_yes\",\"type\":\"professionalReferral\"}')),
     AnswerStruct.fromSerializableMap(jsonDecode(
         '{\"answer\":\"No\",\"image\":\"\",\"id\":\"professional_no\",\"type\":\"professionalReferral\"}')),
     AnswerStruct.fromSerializableMap(jsonDecode(
-        '{\"answer\":\"I\'m a professional\",\"image\":\"\",\"id\":\"professional_self\",\"type\":\"professionalReferral\"}'))
+        '{\"answer\":\"Soy una profesional\",\"image\":\"\",\"id\":\"professional_self\",\"type\":\"professionalReferral\"}'))
   ];
   List<AnswerStruct> get professionalReferral => _professionalReferral;
   set professionalReferral(List<AnswerStruct> value) {
@@ -1076,15 +1076,15 @@ class FFAppState extends ChangeNotifier {
 
   List<AnswerWithTitleAndDescriptionStruct> _currentRoutine = [
     AnswerWithTitleAndDescriptionStruct.fromSerializableMap(jsonDecode(
-        '{\"title\":\"🤓 Advanced\",\"description\":\"Salon visits, premium products, specialists, supplements\",\"id\":\"routine_complex\",\"type\":\"currentRoutine\"}')),
+        '{\"title\":\"🤓 Avanzado\",\"description\":\"Visitas a la estética, productos premium, especialistas, suplementos\",\"id\":\"routine_complex\",\"type\":\"currentRoutine\"}')),
     AnswerWithTitleAndDescriptionStruct.fromSerializableMap(jsonDecode(
-        '{\"title\":\"🫧 Basic care\",\"description\":\"Mostly just shampoo and conditioner\",\"id\":\"routine_basic\",\"type\":\"currentRoutine\"}')),
+        '{\"title\":\"🫧 Cuidado básico\",\"description\":\"Principalmente solo shampoo y acondicionador\",\"id\":\"routine_basic\",\"type\":\"currentRoutine\"}')),
     AnswerWithTitleAndDescriptionStruct.fromSerializableMap(jsonDecode(
-        '{\"title\":\"🤗 Occasional pampering\",\"description\":\"Basic care and occasional hair masks\",\"id\":\"routine_intermediete\",\"type\":\"currentRoutine\"}')),
+        '{\"title\":\"🤗 Cuidados ocasionales\",\"description\":\"Cuidado básico y mascarillas capilares ocasionales\",\"id\":\"routine_intermediete\",\"type\":\"currentRoutine\"}')),
     AnswerWithTitleAndDescriptionStruct.fromSerializableMap(jsonDecode(
-        '{\"title\":\"🌿 Natural remedies\",\"description\":\"Mostly oils, herbs or DIY treatments\",\"id\":\"routine_natural\",\"type\":\"currentRoutine\"}')),
+        '{\"title\":\"🌿 Remedios naturales\",\"description\":\"Principalmente aceites, hierbas o tratamientos caseros\",\"id\":\"routine_natural\",\"type\":\"currentRoutine\"}')),
     AnswerWithTitleAndDescriptionStruct.fromSerializableMap(jsonDecode(
-        '{\"title\":\"😌 None of the above\",\"description\":\"I follow a different haircare routine\",\"id\":\"routine_other\",\"type\":\"currentRoutine\"}'))
+        '{\"title\":\"😌 Ninguna de las anteriores\",\"description\":\"Tengo una rutina de cuidado del cabello diferente\",\"id\":\"routine_other\",\"type\":\"currentRoutine\"}'))
   ];
   List<AnswerWithTitleAndDescriptionStruct> get currentRoutine =>
       _currentRoutine;
@@ -1241,13 +1241,13 @@ class FFAppState extends ChangeNotifier {
   /// For how long have you had this issue?
   List<AnswerStruct> _concernDuration = [
     AnswerStruct.fromSerializableMap(jsonDecode(
-        '{\"answer\":\"😯 Less than 6 months\",\"image\":\"\",\"id\":\"concernDuration_less6month\",\"type\":\"concernDuration\"}')),
+        '{\"answer\":\"😯 Menos de 6 meses\",\"image\":\"\",\"id\":\"concernDuration_less6month\",\"type\":\"concernDuration\"}')),
     AnswerStruct.fromSerializableMap(jsonDecode(
-        '{\"answer\":\"😟 6 months to 1 year\",\"image\":\"\",\"id\":\"concernDuration_6-1year\",\"type\":\"concernDuration\"}')),
+        '{\"answer\":\"😟 De 6 meses a 1 año\",\"image\":\"\",\"id\":\"concernDuration_6-1year\",\"type\":\"concernDuration\"}')),
     AnswerStruct.fromSerializableMap(jsonDecode(
-        '{\"answer\":\"😣 1-2 years\",\"image\":\"\",\"id\":\"concernDuration_1-2years\",\"type\":\"concernDuration\"}')),
+        '{\"answer\":\"😣 De 1 a 2 años\",\"image\":\"\",\"id\":\"concernDuration_1-2years\",\"type\":\"concernDuration\"}')),
     AnswerStruct.fromSerializableMap(jsonDecode(
-        '{\"answer\":\"😵‍💫 2+ years\",\"image\":\"\",\"id\":\"concernDuration_2+years\",\"type\":\"concernDuration\"}'))
+        '{\"answer\":\"😵‍💫 Más de 2 años\",\"image\":\"\",\"id\":\"concernDuration_2+years\",\"type\":\"concernDuration\"}'))
   ];
   List<AnswerStruct> get concernDuration => _concernDuration;
   set concernDuration(List<AnswerStruct> value) {
@@ -1280,13 +1280,13 @@ class FFAppState extends ChangeNotifier {
   /// How would you describe your hair problems?
   List<ImageAnswerStruct> _problemDescription = [
     ImageAnswerStruct.fromSerializableMap(jsonDecode(
-        '{\"image\":\"https://assets.hairqare.co/descriptionProblem_1consistent.webp\",\"answer\":\"One main issue that\'s been consistent\",\"id\":\"problemDescription_1consistent\",\"type\":\"problemDescription\"}')),
+        '{\"image\":\"https://assets.hairqare.co/descriptionProblem_1consistent.webp\",\"answer\":\"Un problema principal que ha sido constante\",\"id\":\"problemDescription_1consistent\",\"type\":\"problemDescription\"}')),
     ImageAnswerStruct.fromSerializableMap(jsonDecode(
-        '{\"image\":\"https://assets.hairqare.co/descriptionProblem_getting%20worse.webp\",\"answer\":\"Problems that keep getting worse\",\"id\":\"problemDescription_keep-changing\",\"type\":\"problemDescription\"}')),
+        '{\"image\":\"https://assets.hairqare.co/descriptionProblem_getting%20worse.webp\",\"answer\":\"Problemas que siguen empeorando\",\"id\":\"problemDescription_keep-changing\",\"type\":\"problemDescription\"}')),
     ImageAnswerStruct.fromSerializableMap(jsonDecode(
-        '{\"image\":\"https://assets.hairqare.co/descriptionProblem_come-go.webp\",\"answer\":\"Issues that come and go unpredictably\",\"id\":\"problemDescription_come&go\",\"type\":\"problemDescription\"}')),
+        '{\"image\":\"https://assets.hairqare.co/descriptionProblem_come-go.webp\",\"answer\":\"Problemas que van y vienen sin aviso\",\"id\":\"problemDescription_come&go\",\"type\":\"problemDescription\"}')),
     ImageAnswerStruct.fromSerializableMap(jsonDecode(
-        '{\"image\":\"https://assets.hairqare.co/descriptionProblem_multiply.webp\",\"answer\":\"Problems that seem to multiply over time\",\"id\":\"problemDescription_multiply\",\"type\":\"problemDescription\"}'))
+        '{\"image\":\"https://assets.hairqare.co/descriptionProblem_multiply.webp\",\"answer\":\"Problemas que parecen multiplicarse con el tiempo\",\"id\":\"problemDescription_multiply\",\"type\":\"problemDescription\"}'))
   ];
   List<ImageAnswerStruct> get problemDescription => _problemDescription;
   set problemDescription(List<ImageAnswerStruct> value) {
@@ -1318,19 +1318,19 @@ class FFAppState extends ChangeNotifier {
 
   List<MultiChoiceWithImagesCheckBoxStruct> _originProblem = [
     MultiChoiceWithImagesCheckBoxStruct.fromSerializableMap(jsonDecode(
-        '{\"image\":\"https://assets.hairqare.co/originProblem_schedule.webp\",\"title\":\"Overwhelming schedule\",\"checklBox\":\"false\",\"Id\":\"originProblem_schedule\",\"type\":\"originProblem\"}')),
+        '{\"image\":\"https://assets.hairqare.co/originProblem_schedule.webp\",\"title\":\"Una agenda apretada\",\"checklBox\":\"false\",\"Id\":\"originProblem_schedule\",\"type\":\"originProblem\"}')),
     MultiChoiceWithImagesCheckBoxStruct.fromSerializableMap(jsonDecode(
-        '{\"image\":\"https://assets.hairqare.co/originProblem_big-changes.webp\",\"title\":\"Major life stress or changes\",\"checklBox\":\"false\",\"Id\":\"originProblem_majorstress\",\"type\":\"originProblem\"}')),
+        '{\"image\":\"https://assets.hairqare.co/originProblem_big-changes.webp\",\"title\":\"Mucho estrés o cambios grandes en mi vida\",\"checklBox\":\"false\",\"Id\":\"originProblem_majorstress\",\"type\":\"originProblem\"}')),
     MultiChoiceWithImagesCheckBoxStruct.fromSerializableMap(jsonDecode(
-        '{\"image\":\"https://assets.hairqare.co/originProblem_hormones.webp\",\"title\":\"Hormonal shifts \\n(birth control, pregnancy, menopause...)\",\"checklBox\":\"false\",\"Id\":\"originProblem_hormones\",\"type\":\"originProblem\"}')),
+        '{\"image\":\"https://assets.hairqare.co/originProblem_hormones.webp\",\"title\":\"Cambios hormonales\\n(anticonceptivos, embarazo, menopausia…)\",\"checklBox\":\"false\",\"Id\":\"originProblem_hormones\",\"type\":\"originProblem\"}')),
     MultiChoiceWithImagesCheckBoxStruct.fromSerializableMap(jsonDecode(
-        '{\"image\":\"https://assets.hairqare.co/originProblem_medicine.webp\",\"title\":\"Health issues or new medications\",\"checklBox\":\"false\",\"Id\":\"originProblem_health\",\"type\":\"originProblem\"}')),
+        '{\"image\":\"https://assets.hairqare.co/originProblem_medicine.webp\",\"title\":\"Problemas de salud o nuevos medicamentos\",\"checklBox\":\"false\",\"Id\":\"originProblem_health\",\"type\":\"originProblem\"}')),
     MultiChoiceWithImagesCheckBoxStruct.fromSerializableMap(jsonDecode(
-        '{\"image\":\"https://assets.hairqare.co/originProblem_responsibilities.webp\",\"title\":\"Chronic stress \\nfrom juggling too many responsibilities\",\"checklBox\":\"false\",\"Id\":\"originProblem_chronic-stress\",\"type\":\"originProblem\"}')),
+        '{\"image\":\"https://assets.hairqare.co/originProblem_responsibilities.webp\",\"title\":\"Estrés crónico por cargar con muchas responsabilidades\",\"checklBox\":\"false\",\"Id\":\"originProblem_chronic-stress\",\"type\":\"originProblem\"}')),
     MultiChoiceWithImagesCheckBoxStruct.fromSerializableMap(jsonDecode(
-        '{\"image\":\"https://assets.hairqare.co/originProblem_weight.webp\",\"title\":\"Significant weight changes\",\"checklBox\":\"false\",\"Id\":\"originProblem_weight\",\"type\":\"originProblem\"}')),
+        '{\"image\":\"https://assets.hairqare.co/originProblem_weight.webp\",\"title\":\"Cambios significativos de peso\",\"checklBox\":\"false\",\"Id\":\"originProblem_weight\",\"type\":\"originProblem\"}')),
     MultiChoiceWithImagesCheckBoxStruct.fromSerializableMap(jsonDecode(
-        '{\"image\":\"https://assets.hairqare.co/originProblem_sleep.webp\",\"title\":\"Poor sleep\",\"checklBox\":\"false\",\"Id\":\"originProblem_sleep\",\"type\":\"originProblem\"}'))
+        '{\"image\":\"https://assets.hairqare.co/originProblem_sleep.webp\",\"title\":\"Dormir mal\",\"checklBox\":\"false\",\"Id\":\"originProblem_sleep\",\"type\":\"originProblem\"}'))
   ];
   List<MultiChoiceWithImagesCheckBoxStruct> get originProblem => _originProblem;
   set originProblem(List<MultiChoiceWithImagesCheckBoxStruct> value) {

@@ -64,7 +64,11 @@ class _LoginComponentWidgetState extends State<LoginComponentWidget> {
     _model.nameTextFieldFocusNode ??= FocusNode();
     _model.nameTextFieldFocusNode!.addListener(
       () async {
-        await Future.delayed(const Duration(milliseconds: 400));
+        await Future.delayed(
+          Duration(
+            milliseconds: 400,
+          ),
+        );
         await _model.listViewController?.animateTo(
           _model.listViewController!.position.maxScrollExtent,
           duration: Duration(milliseconds: 200),
@@ -125,7 +129,7 @@ class _LoginComponentWidgetState extends State<LoginComponentWidget> {
                 alignment: AlignmentDirectional(0.0, 0.0),
                 child: Text(
                   FFLocalizations.of(context).getText(
-                    '1e5gv14v' /* Your results are ready! */,
+                    '1e5gv14v' /* ¡Tus resultados están listos! */,
                   ),
                   textAlign: TextAlign.center,
                   style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -250,9 +254,7 @@ class _LoginComponentWidgetState extends State<LoginComponentWidget> {
                                     10.0, 5.0, 10.0, 20.0),
                                 child: Text(
                                   FFLocalizations.of(context).getText(
-                                    '9kxb0hra' /* Enter your details 
-to unlock ... */
-                                    ,
+                                    '9kxb0hra' /* Ingresa tus datos y accede a t... */,
                                   ),
                                   textAlign: TextAlign.center,
                                   style: FlutterFlowTheme.of(context)
@@ -294,7 +296,7 @@ to unlock ... */
                                       isDense: false,
                                       labelText:
                                           FFLocalizations.of(context).getText(
-                                        'dhice1ou' /* Name */,
+                                        'dhice1ou' /* Nombre */,
                                       ),
                                       labelStyle: FlutterFlowTheme.of(context)
                                           .labelMedium
@@ -437,7 +439,10 @@ to unlock ... */
                                     focusNode: _model.emailTextFieldFocusNode,
                                     onFieldSubmitted: (_) async {
                                       await Future.delayed(
-                                          const Duration(milliseconds: 400));
+                                        Duration(
+                                          milliseconds: 400,
+                                        ),
+                                      );
                                       await _model.listViewController
                                           ?.animateTo(
                                         _model.listViewController!.position
@@ -453,7 +458,7 @@ to unlock ... */
                                       isDense: false,
                                       labelText:
                                           FFLocalizations.of(context).getText(
-                                        '76eyp598' /* Email */,
+                                        '76eyp598' /* Correo electrónico */,
                                       ),
                                       labelStyle: FlutterFlowTheme.of(context)
                                           .labelMedium
@@ -581,13 +586,16 @@ to unlock ... */
                                       FlutterFlowTheme.of(context).orange,
                                   buttonTextColor: FlutterFlowTheme.of(context)
                                       .secondaryBackground,
-                                  buttonName: 'Submit',
+                                  buttonName: 'Enviar',
                                   buttonRadius: 100,
                                   borderColor:
                                       FlutterFlowTheme.of(context).transparent,
                                   buttonOnTap: () async {
                                     await Future.delayed(
-                                        const Duration(milliseconds: 300));
+                                      Duration(
+                                        milliseconds: 300,
+                                      ),
+                                    );
                                     await _model.listViewController?.animateTo(
                                       _model.listViewController!.position
                                           .maxScrollExtent,
@@ -637,7 +645,7 @@ to unlock ... */
                   padding: EdgeInsetsDirectional.fromSTEB(5.0, 35.0, 5.0, 0.0),
                   child: Text(
                     FFLocalizations.of(context).getText(
-                      'glfaezfb' /* Your info is 100% secure and n... */,
+                      'glfaezfb' /* Tu información está 100% segur... */,
                     ),
                     textAlign: TextAlign.center,
                     style: FlutterFlowTheme.of(context).bodyMedium.override(

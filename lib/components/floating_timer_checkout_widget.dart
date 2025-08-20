@@ -113,7 +113,7 @@ class _FloatingTimerCheckoutWidgetState
                                     10.0, 0.0, 0.0, 0.0),
                                 child: AutoSizeText(
                                   FFLocalizations.of(context).getText(
-                                    'mtbfmoax' /*  85% OFF valid for: */,
+                                    'mtbfmoax' /* 85% OFF HASTA: */,
                                   ),
                                   minFontSize: 10.0,
                                   style: FlutterFlowTheme.of(context)
@@ -225,9 +225,9 @@ class _FloatingTimerCheckoutWidgetState
                     },
                     text: valueOrDefault<String>(
                       _model.showLoadingAnimation!
-                          ? 'Loading ...'
-                          : 'Start Now',
-                      'Start Now',
+                          ? 'Cargando...'
+                          : 'Empieza ahora',
+                      'Empieza ahora',
                     ),
                     options: FFButtonOptions(
                       height: 50.0,

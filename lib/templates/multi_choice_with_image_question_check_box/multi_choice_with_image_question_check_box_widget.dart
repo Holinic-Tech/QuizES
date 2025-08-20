@@ -179,7 +179,7 @@ class _MultiChoiceWithImageQuestionCheckBoxWidgetState
                               0.0, 10.0, 0.0, 0.0),
                           child: Text(
                             FFLocalizations.of(context).getText(
-                              '7o5y8tc0' /* Select all that apply */,
+                              '7o5y8tc0' /* Selecciona todas las que apliq... */,
                             ),
                             textAlign: TextAlign.justify,
                             style: FlutterFlowTheme.of(context)
@@ -597,7 +597,7 @@ class _MultiChoiceWithImageQuestionCheckBoxWidgetState
                                             AlignmentDirectional(-1.0, 0.0),
                                         child: Text(
                                           FFLocalizations.of(context).getText(
-                                            '7tkotzl5' /* None of the above */,
+                                            '7tkotzl5' /* Ninguna de las anteriores */,
                                           ),
                                           textAlign: TextAlign.center,
                                           style: FlutterFlowTheme.of(context)

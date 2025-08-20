@@ -169,7 +169,7 @@ class _PitchBodySimpleTextImagesBodyWidgetState
                                   0.0, 0.0, 0.0, 10.0),
                               child: Text(
                                 FFLocalizations.of(context).getText(
-                                  'u7c6uom7' /* Follicle dysfunction probabili... */,
+                                  'u7c6uom7' /* Probabilidad de disfunción del... */,
                                 ),
                                 textAlign: TextAlign.center,
                                 style: FlutterFlowTheme.of(context)
@@ -210,7 +210,7 @@ class _PitchBodySimpleTextImagesBodyWidgetState
                                     FlutterFlowTheme.of(context).alternate,
                                 center: Text(
                                   FFLocalizations.of(context).getText(
-                                    'qgq1r05e' /* High  */,
+                                    'qgq1r05e' /* ALTA */,
                                   ),
                                   textAlign: TextAlign.start,
                                   style: FlutterFlowTheme.of(context)
@@ -266,7 +266,7 @@ class _PitchBodySimpleTextImagesBodyWidgetState
                                         questionId: 'currentRoutine',
                                         answerIds: ['routine_complex'],
                                       ))) {
-                                    return 'With your level of effort and expertise, your hair should be at the top of its game. ';
+                                    return 'Con el esfuerzo y dedicación que le das, tu cabello debería estar en su mejor momento.';
                                   } else if (FFAppState()
                                       .quizProfile
                                       .qaPairs
@@ -274,7 +274,7 @@ class _PitchBodySimpleTextImagesBodyWidgetState
                                         questionId: 'currentRoutine',
                                         answerIds: ['routine_basic'],
                                       ))) {
-                                    return 'When follicles are functioning properly, basic care should be MORE than enough to get beautiful hair. ';
+                                    return 'Cuando los folículos funcionan correctamente, el cuidado básico debería ser MÁS que suficiente para tener un cabello hermoso.';
                                   } else if (FFAppState()
                                       .quizProfile
                                       .qaPairs
@@ -282,7 +282,7 @@ class _PitchBodySimpleTextImagesBodyWidgetState
                                         questionId: 'currentRoutine',
                                         answerIds: ['routine_intermediete'],
                                       ))) {
-                                    return 'When follicles are functioning properly, simple care & occasional pampering should be MORE than enough to get beautiful hair. ';
+                                    return 'Cuando los folículos funcionan correctamente, un cuidado simple y consentirse de vez en cuando deberían ser MÁS que suficientes para tener un cabello hermoso.';
                                   } else if (FFAppState()
                                       .quizProfile
                                       .qaPairs
@@ -290,9 +290,9 @@ class _PitchBodySimpleTextImagesBodyWidgetState
                                         questionId: 'currentRoutine',
                                         answerIds: ['routine_natural'],
                                       ))) {
-                                    return 'The right natural ingredients are incredibly nourishing; they should be giving your hair everything it needs. ';
+                                    return 'Los ingredientes naturales adecuados son increíblemente nutritivos; deberían darle a tu cabello todo lo que necesita.';
                                   } else {
-                                    return 'When follicles are functioning properly, even simple care should be MORE than enough to get beautiful hair.';
+                                    return 'Cuando los folículos capilares funcionan correctamente, hasta el cuidado más simple es MÁS que suficiente para lucir un cabello hermoso.';
                                   }
                                 }(),
                                 style: FlutterFlowTheme.of(context)
@@ -316,7 +316,7 @@ class _PitchBodySimpleTextImagesBodyWidgetState
                                 text: FFLocalizations.of(context).getText(
                                   'h3j1paw8' /* 
 
-The fact that  */
+El hecho de que */
                                   ,
                                 ),
                                 style: FlutterFlowTheme.of(context)
@@ -349,7 +349,7 @@ The fact that  */
                                         questionId: 'hairConcern',
                                         answerIds: ['concern_hairloss'],
                                       ))) {
-                                    return 'your hair loss ';
+                                    return ' tu caída del cabello';
                                   } else if (FFAppState()
                                       .quizProfile
                                       .qaPairs
@@ -357,7 +357,7 @@ The fact that  */
                                         questionId: 'hairConcern',
                                         answerIds: ['concern_splitends'],
                                       ))) {
-                                    return ' your split ends and dryness ';
+                                    return ' tus puntas abiertas y la sequedad del cabello';
                                   } else if (FFAppState()
                                       .quizProfile
                                       .qaPairs
@@ -365,7 +365,7 @@ The fact that  */
                                         questionId: 'hairConcern',
                                         answerIds: ['concern_scalp'],
                                       ))) {
-                                    return 'your scalp issues ';
+                                    return ' tus problemas del cuero cabelludo';
                                   } else if (FFAppState()
                                       .quizProfile
                                       .qaPairs
@@ -373,9 +373,9 @@ The fact that  */
                                         questionId: 'hairConcern',
                                         answerIds: ['concern_damage'],
                                       ))) {
-                                    return 'so much hair damage ';
+                                    return ' tanto daño al cabello';
                                   } else {
-                                    return 'your hair troubles ';
+                                    return ' tus problemas de cabello';
                                   }
                                 }(),
                                 style: FlutterFlowTheme.of(context)
@@ -406,7 +406,7 @@ The fact that  */
                                           'concernDuration_less6month'
                                         ],
                                       ))) {
-                                    return 'has emerged ';
+                                    return ' ha surgido';
                                   } else if (FFAppState()
                                       .quizProfile
                                       .qaPairs
@@ -414,7 +414,7 @@ The fact that  */
                                         questionId: 'concernDuration',
                                         answerIds: ['concernDuration_6-1year'],
                                       ))) {
-                                    return 'is still there after 6 months  ';
+                                    return ' sigue ahí después de 6 meses';
                                   } else if (FFAppState()
                                       .quizProfile
                                       .qaPairs
@@ -422,7 +422,7 @@ The fact that  */
                                         questionId: 'concernDuration',
                                         answerIds: ['concernDuration_1-2years'],
                                       ))) {
-                                    return 'is still lingering after a year ';
+                                    return ' sigue presente después de un año';
                                   } else if (FFAppState()
                                       .quizProfile
                                       .qaPairs
@@ -430,9 +430,9 @@ The fact that  */
                                         questionId: 'concernDuration',
                                         answerIds: ['concernDuration_2+years'],
                                       ))) {
-                                    return 'is persistent through the years ';
+                                    return ' persiste a lo largo de los años';
                                   } else {
-                                    return 'is still there ';
+                                    return ' aún está ahí';
                                   }
                                 }(),
                                 style: FlutterFlowTheme.of(context)
@@ -461,7 +461,7 @@ The fact that  */
                                         questionId: 'currentRoutine',
                                         answerIds: ['routine_basic'],
                                       ))) {
-                                    return 'with such a simple routine shows that your follicles aren\'t functioning properly.';
+                                    return ', con una rutina tan simple, se nota que tus folículos capilares no están funcionando correctamente.';
                                   } else if (FFAppState()
                                       .quizProfile
                                       .qaPairs
@@ -469,7 +469,7 @@ The fact that  */
                                         questionId: 'currentRoutine',
                                         answerIds: ['routine_complex'],
                                       ))) {
-                                    return 'while investing so much time and money clearly shows that your follicles are stuck in a bad cycle.';
+                                    return ', al invertir tanto tiempo y dinero, queda claro que tus folículos capilares están atrapados en un mal ciclo.';
                                   } else if (FFAppState()
                                       .quizProfile
                                       .qaPairs
@@ -477,7 +477,7 @@ The fact that  */
                                         questionId: 'currentRoutine',
                                         answerIds: ['routine_natural'],
                                       ))) {
-                                    return 'despite following a natural routine means that something is keeping your follicles stuck in a bad cycle.';
+                                    return ', a pesar de seguir una rutina natural, hay algo que mantiene tus folículos capilares atrapados en un ciclo negativo.';
                                   } else if (FFAppState()
                                       .quizProfile
                                       .qaPairs
@@ -485,9 +485,9 @@ The fact that  */
                                         questionId: 'currentRoutine',
                                         answerIds: ['routine_intermediete'],
                                       ))) {
-                                    return 'despite the extra care shows that your hair and follicles aren’t responding to the treatments like they should.';
+                                    return ', a pesar del cuidado extra, parece que tu cabello y tus folículos capilares no están respondiendo a los tratamientos como deberían.';
                                   } else {
-                                    return 'clearly shows that your follicles are stuck in a bad cycle & don’t benefit properly from the care you’re giving.';
+                                    return ', está claro que tus folículos capilares están atrapados en un ciclo negativo y no se benefician adecuadamente del cuidado que les estás dando.';
                                   }
                                 }(),
                                 style: TextStyle(

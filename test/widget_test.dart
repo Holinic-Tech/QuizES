@@ -7,7 +7,7 @@
 
 import 'package:flutter_test/flutter_test.dart';
 
-import 'package:follicle_dysfunction_quiz/main.dart';
+import 'package:hairqare_quiz_h_f_d_e_s/main.dart';
 
 void main() {
   testWidgets('Counter increments smoke test', (WidgetTester tester) async {

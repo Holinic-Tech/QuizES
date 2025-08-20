@@ -28,7 +28,9 @@ class DashboardWidget extends StatefulWidget {
     required this.startMyChallengeAction,
     required this.startDate,
     required this.reserveMySeatAction,
-  });
+    String? subHeading,
+  }) : this.subHeading =
+            subHeading ?? 'You are a perfect fit for the Haircare Challenge 😍';
 
   final String? name;
   final int? percentage;
@@ -43,6 +45,8 @@ class DashboardWidget extends StatefulWidget {
 
   /// Button on tap of the Reserve My Action
   final Future Function()? reserveMySeatAction;
+
+  final String subHeading;
 
   @override
   State<DashboardWidget> createState() => _DashboardWidgetState();
@@ -144,7 +148,7 @@ class _DashboardWidgetState extends State<DashboardWidget> {
                           padding: EdgeInsetsDirectional.fromSTEB(
                               0.0, 20.0, 0.0, 0.0),
                           child: Text(
-                            'Congratulations, ${valueOrDefault<String>(
+                            '¡Felicidades!${valueOrDefault<String>(
                               FFAppState().submittedContactDetails.name,
                               '🎉',
                             )}!',
@@ -184,9 +188,7 @@ class _DashboardWidgetState extends State<DashboardWidget> {
                         padding: EdgeInsetsDirectional.fromSTEB(
                             0.0, 25.0, 0.0, 25.0),
                         child: Text(
-                          FFLocalizations.of(context).getText(
-                            'qm88njuv' /* You are a perfect fit for the ... */,
-                          ),
+                          widget.subHeading,
                           textAlign: TextAlign.center,
                           style:
                               FlutterFlowTheme.of(context).bodyMedium.override(
@@ -249,7 +251,7 @@ class _DashboardWidgetState extends State<DashboardWidget> {
                             children: [
                               Text(
                                 FFLocalizations.of(context).getText(
-                                  '26c1jnac' /* Your matching score is: */,
+                                  '26c1jnac' /* Tu puntuación de compatibilida... */,
                                 ),
                                 style: FlutterFlowTheme.of(context)
                                     .bodyMedium
@@ -341,28 +343,36 @@ class _DashboardWidgetState extends State<DashboardWidget> {
                                         .quizProfile
                                         .qaPairs
                                         .contains(QuestionAnswerPairStruct(
-                                          questionId: 'hairGoal',
-                                          answerIds: ['goal_hairloss'],
+                                          questionId: 'hairConcern',
+                                          answerIds: ['concern_hairloss'],
                                         ))) {
-                                      return '9 out of 10 women with this score said their shedding stopped, and they started seeing new baby hairs after the challenge.';
+                                      return '9 de cada 10 mujeres con esta puntuación dijeron que su caída del cabello se detuvo, y empezaron a notar cabello nuevo después de la 14 Day Haircare Challenge.';
                                     } else if (FFAppState()
                                         .quizProfile
                                         .qaPairs
                                         .contains(QuestionAnswerPairStruct(
-                                          questionId: 'hairGoal',
-                                          answerIds: ['goal_betterhair'],
+                                          questionId: 'hairConcern',
+                                          answerIds: ['concern_splitends'],
                                         ))) {
-                                      return '9 out of 10 women with this score said their hair felt softer, healthier, and looked better after the challenge. ';
+                                      return '9 de cada 10 mujeres con este puntaje compartieron que su cabello se sentía más suave, más saludable y que se veía mejor después del challenge.';
                                     } else if (FFAppState()
                                         .quizProfile
                                         .qaPairs
                                         .contains(QuestionAnswerPairStruct(
-                                          questionId: 'hairGoal',
-                                          answerIds: ['goal_both'],
+                                          questionId: 'hairConcern',
+                                          answerIds: ['concern_mixed'],
                                         ))) {
-                                      return '9 out of 10 women with this score said their shedding stopped, and their hair looked and felt better after the challenge.';
+                                      return '9 de cada 10 mujeres con esta puntuación compartieron que su caída del cabello se detuvo, y que su cabello se veía y se sentía mejor después del challenge.';
+                                    } else if (FFAppState()
+                                        .quizProfile
+                                        .qaPairs
+                                        .contains(QuestionAnswerPairStruct(
+                                          questionId: 'hairConcern',
+                                          answerIds: ['concern_damage'],
+                                        ))) {
+                                      return '9 de cada 10 mujeres con esta puntuación compartieron que su cabello se sentía más suave, más saludable y se veía mejor después del reto.';
                                     } else {
-                                      return '9 out of 10 women with this score said their shedding stopped, and their hair looked and felt better after the challenge.';
+                                      return '9 de cada 10 mujeres con esta puntuación compartieron que se detuvo la caída del cabello y que su cabello se veía y se sentía mejor después del reto.';
                                     }
                                   }()}',
                                   '9 out of 10 women with this score said their shedding stopped, and their hair looked and felt better after the challenge.',
@@ -549,7 +559,7 @@ class _DashboardWidgetState extends State<DashboardWidget> {
                                                       questionId: 'age',
                                                       answerIds: ['age_18to29'],
                                                     ))) {
-                                                  return 'In my 20s';
+                                                  return 'Edad: 20s';
                                                 } else if (FFAppState()
                                                     .quizProfile
                                                     .qaPairs
@@ -558,7 +568,7 @@ class _DashboardWidgetState extends State<DashboardWidget> {
                                                       questionId: 'age',
                                                       answerIds: ['age_30to39'],
                                                     ))) {
-                                                  return 'In my 30s';
+                                                  return 'Edad: 30s';
                                                 } else if (FFAppState()
                                                     .quizProfile
                                                     .qaPairs
@@ -567,7 +577,7 @@ class _DashboardWidgetState extends State<DashboardWidget> {
                                                       questionId: 'age',
                                                       answerIds: ['age_40to49'],
                                                     ))) {
-                                                  return 'In my 40s';
+                                                  return 'Edad: 40s';
                                                 } else if (FFAppState()
                                                     .quizProfile
                                                     .qaPairs
@@ -576,9 +586,9 @@ class _DashboardWidgetState extends State<DashboardWidget> {
                                                       questionId: 'age',
                                                       answerIds: ['age_50+'],
                                                     ))) {
-                                                  return 'Age 50+';
+                                                  return 'Edad: 50+';
                                                 } else {
-                                                  return 'Summary';
+                                                  return 'Resumen';
                                                 }
                                               }(),
                                               'Summary',
@@ -640,7 +650,7 @@ class _DashboardWidgetState extends State<DashboardWidget> {
                                                       'concern_hairloss'
                                                     ],
                                                   ))) {
-                                                return 'HIJACKED FOLLICLES';
+                                                return 'FOLÍCULOS CAPILARES SECUESTRADOS';
                                               } else if (FFAppState()
                                                   .quizProfile
                                                   .qaPairs
@@ -651,7 +661,7 @@ class _DashboardWidgetState extends State<DashboardWidget> {
                                                       'concern_damage'
                                                     ],
                                                   ))) {
-                                                return 'FAULTY FOLLICLES';
+                                                return 'FOLÍCULOS CAPILARES DEFECTUOSOS';
                                               } else if (FFAppState()
                                                   .quizProfile
                                                   .qaPairs
@@ -662,7 +672,7 @@ class _DashboardWidgetState extends State<DashboardWidget> {
                                                       'concern_splitends'
                                                     ],
                                                   ))) {
-                                                return 'FAULTY FOLLICLES';
+                                                return 'FOLÍCULOS CAPILARES DEFECTUOSOS';
                                               } else if (FFAppState()
                                                   .quizProfile
                                                   .qaPairs
@@ -673,7 +683,7 @@ class _DashboardWidgetState extends State<DashboardWidget> {
                                                       'concern_scalp'
                                                     ],
                                                   ))) {
-                                                return 'INFLAMED FOLLICLES';
+                                                return 'FOLICULOS CAPILARES INFLAMADOS';
                                               } else if (FFAppState()
                                                   .quizProfile
                                                   .qaPairs
@@ -684,9 +694,9 @@ class _DashboardWidgetState extends State<DashboardWidget> {
                                                       'concern_mixed'
                                                     ],
                                                   ))) {
-                                                return 'OVERWORKED FOLLICLES';
+                                                return 'FOLÍCULOS CAPILARES SOBRECARGADOS';
                                               } else {
-                                                return 'OVERWORKED FOLLICLES';
+                                                return 'FOLÍCULOS CAPILARES SOBRECARGADOS';
                                               }
                                             }(),
                                             style: FlutterFlowTheme.of(context)
@@ -731,7 +741,7 @@ class _DashboardWidgetState extends State<DashboardWidget> {
                                                           'concern_hairloss'
                                                         ],
                                                       ))) {
-                                                    return 'To get thick, full hair that grows easily: ';
+                                                    return 'Para lograr un cabello grueso y abundante que crece con facilidad:';
                                                   } else if (FFAppState()
                                                       .quizProfile
                                                       .qaPairs
@@ -743,7 +753,7 @@ class _DashboardWidgetState extends State<DashboardWidget> {
                                                           'concern_splitends'
                                                         ],
                                                       ))) {
-                                                    return 'To get strong beautiful hair, easy to care for:';
+                                                    return 'Para lograr un cabello fuerte y hermoso, que sea fácil de cuidar:';
                                                   } else if (FFAppState()
                                                       .quizProfile
                                                       .qaPairs
@@ -755,7 +765,7 @@ class _DashboardWidgetState extends State<DashboardWidget> {
                                                           'concern_scalp'
                                                         ],
                                                       ))) {
-                                                    return 'To heal your scalp and restore hair shine:';
+                                                    return 'Para sanar tu cuero cabelludo y recuperar el brillo del cabello:';
                                                   } else if (FFAppState()
                                                       .quizProfile
                                                       .qaPairs
@@ -767,9 +777,9 @@ class _DashboardWidgetState extends State<DashboardWidget> {
                                                           'concern_damage'
                                                         ],
                                                       ))) {
-                                                    return 'To get strong  hair you can style & color:';
+                                                    return 'Para tener un cabello más fuerte que puedas peinar y teñir:';
                                                   } else {
-                                                    return 'To get thick healthy hair, easy to care for:';
+                                                    return 'Para tener un cabello grueso y saludable, fácil de cuidar:';
                                                   }
                                                 }(),
                                                 'To get beautiful hair, easy to care for:',
@@ -818,7 +828,7 @@ class _DashboardWidgetState extends State<DashboardWidget> {
                                                           'concern_hairloss'
                                                         ],
                                                       ))) {
-                                                    return 'Reduce all hidden stressors. Deliver targeted care that reaches the core follicle inflammation to kick-start the hair production again.';
+                                                    return 'Reduce todos los factores de estrés ocultos. Aplica un cuidado específico que llegue a la inflamación del folículo capilar para reactivar el crecimiento del cabello.';
                                                   } else if (FFAppState()
                                                       .quizProfile
                                                       .qaPairs
@@ -830,7 +840,7 @@ class _DashboardWidgetState extends State<DashboardWidget> {
                                                           'concern_splitends'
                                                         ],
                                                       ))) {
-                                                    return 'Reduce all hidden stressors. Fix your hair growth process at the follicle level with targeted products and practices.';
+                                                    return 'Reduce todos los factores de estrés ocultos. Corrige el proceso de crecimiento capilar a nivel de los folículos capilares con productos y prácticas específicas.';
                                                   } else if (FFAppState()
                                                       .quizProfile
                                                       .qaPairs
@@ -842,7 +852,7 @@ class _DashboardWidgetState extends State<DashboardWidget> {
                                                           'concern_scalp'
                                                         ],
                                                       ))) {
-                                                    return 'Reduce all hidden inflammatory stressors. Provide targeted care to balance the environment and restore healthy hair growth.';
+                                                    return 'Reduce todos los factores inflamatorios ocultos. Ofrece un cuidado específico para equilibrar el ambiente del cuero cabelludo y restaurar un crecimiento capilar saludable.';
                                                   } else if (FFAppState()
                                                       .quizProfile
                                                       .qaPairs
@@ -854,12 +864,12 @@ class _DashboardWidgetState extends State<DashboardWidget> {
                                                           'concern_damage'
                                                         ],
                                                       ))) {
-                                                    return 'Reduce all hidden stressors. Fix your hair growth process at the follicle level with targeted products and practices.';
+                                                    return 'Reduce todos los factores de estrés ocultos. Corrige tu proceso de crecimiento capilar a nivel del folículo con productos y prácticas específicas.';
                                                   } else {
-                                                    return 'Reduce all hidden stressors. Reboot hair growth process at the follicle level with targeted products and practices.';
+                                                    return 'Reduce todos los factores de estrés ocultos. Reinicia el proceso de crecimiento capilar a nivel de los folículos con productos y prácticas específicas.';
                                                   }
                                                 }(),
-                                                'Reduce all hidden stressors. Reboot hair growth process at the follicle level with targeted products and practices.',
+                                                'Reduce todos los factores de estrés ocultos. Reinicia el proceso de crecimiento capilar a nivel de los folículos con productos y prácticas específicas.',
                                               ),
                                               textAlign: TextAlign.start,
                                               style:
@@ -900,7 +910,7 @@ class _DashboardWidgetState extends State<DashboardWidget> {
                                     0.0, 12.0, 0.0, 12.0),
                                 child: Text(
                                   FFLocalizations.of(context).getText(
-                                    'aq4pinvd' /* Your hair transformation timel... */,
+                                    'aq4pinvd' /* Tu línea de tiempo de transfor... */,
                                   ),
                                   style: FlutterFlowTheme.of(context)
                                       .bodyMedium
@@ -1080,7 +1090,7 @@ class _DashboardWidgetState extends State<DashboardWidget> {
                         padding: EdgeInsetsDirectional.fromSTEB(
                             0.0, 30.0, 0.0, 20.0),
                         child: Text(
-                          'You deserve this, ${FFAppState().submittedContactDetails.name}!',
+                          'Te lo mereces, ${FFAppState().submittedContactDetails.name}!',
                           textAlign: TextAlign.center,
                           style:
                               FlutterFlowTheme.of(context).bodyMedium.override(
@@ -1108,7 +1118,7 @@ class _DashboardWidgetState extends State<DashboardWidget> {
                         padding:
                             EdgeInsetsDirectional.fromSTEB(0.0, 15.0, 0.0, 0.0),
                         child: Text(
-                          'Join the 14-Day Haircare Challenge  and  say goodbye to your ${valueOrDefault<String>(
+                          'Únete al Reto de Cuidado Capilar de 14 Días y y dile adiós a tu ${valueOrDefault<String>(
                             () {
                               if (FFAppState()
                                   .quizProfile
@@ -1117,7 +1127,7 @@ class _DashboardWidgetState extends State<DashboardWidget> {
                                     questionId: 'hairConcern',
                                     answerIds: ['concern_hairloss'],
                                   ))) {
-                                return 'hair loss';
+                                return 'caída del cabello';
                               } else if (FFAppState()
                                   .quizProfile
                                   .qaPairs
@@ -1125,7 +1135,7 @@ class _DashboardWidgetState extends State<DashboardWidget> {
                                     questionId: 'hairConcern',
                                     answerIds: ['concern_splitends'],
                                   ))) {
-                                return 'split-ends';
+                                return 'puntas abiertas';
                               } else if (FFAppState()
                                   .quizProfile
                                   .qaPairs
@@ -1133,7 +1143,7 @@ class _DashboardWidgetState extends State<DashboardWidget> {
                                     questionId: 'hairConcern',
                                     answerIds: ['concern_scalp'],
                                   ))) {
-                                return 'scalp issues';
+                                return 'problemas del cuero cabelludo';
                               } else if (FFAppState()
                                   .quizProfile
                                   .qaPairs
@@ -1141,13 +1151,13 @@ class _DashboardWidgetState extends State<DashboardWidget> {
                                     questionId: 'hairConcern',
                                     answerIds: ['concern_damage'],
                                   ))) {
-                                return 'damaged hair';
+                                return 'cabello dañado';
                               } else {
-                                return 'chronic hair problems';
+                                return 'problemas crónicos del cabello';
                               }
                             }(),
-                            'chronic hair problems',
-                          )} permanently with a routine that works.',
+                            'problemas crónicos del cabello',
+                          )}de forma permanente con una rutina que funcione.',
                           textAlign: TextAlign.center,
                           style:
                               FlutterFlowTheme.of(context).bodyMedium.override(
@@ -1175,7 +1185,9 @@ class _DashboardWidgetState extends State<DashboardWidget> {
                         padding: EdgeInsetsDirectional.fromSTEB(
                             0.0, 10.0, 0.0, 20.0),
                         child: Text(
-                          ' No more frustration or disappointments!',
+                          FFLocalizations.of(context).getText(
+                            '7pj5156l' /* ¡Adiós a la frustración y a la... */,
+                          ),
                           textAlign: TextAlign.center,
                           style:
                               FlutterFlowTheme.of(context).bodyMedium.override(
@@ -1232,7 +1244,7 @@ class _DashboardWidgetState extends State<DashboardWidget> {
                             Expanded(
                               child: Text(
                                 FFLocalizations.of(context).getText(
-                                  'gupt5mjs' /* Target the root causes of your... */,
+                                  'gupt5mjs' /* Ataca las causas de raíz de tu... */,
                                 ),
                                 textAlign: TextAlign.start,
                                 style: FlutterFlowTheme.of(context)
@@ -1301,7 +1313,7 @@ class _DashboardWidgetState extends State<DashboardWidget> {
                             Expanded(
                               child: Text(
                                 FFLocalizations.of(context).getText(
-                                  'begqgauj' /* Build a personalized, easy-to-... */,
+                                  'begqgauj' /* Crea un plan de cuidado capila... */,
                                 ),
                                 textAlign: TextAlign.start,
                                 style: FlutterFlowTheme.of(context)
@@ -1370,7 +1382,7 @@ class _DashboardWidgetState extends State<DashboardWidget> {
                             Expanded(
                               child: Text(
                                 FFLocalizations.of(context).getText(
-                                  'qopcc4n9' /* Create your own gentle, DIY sh... */,
+                                  'qopcc4n9' /* Crea tu propio shampoo y acond... */,
                                 ),
                                 textAlign: TextAlign.start,
                                 style: FlutterFlowTheme.of(context)
@@ -1444,7 +1456,7 @@ class _DashboardWidgetState extends State<DashboardWidget> {
                           safeSetState(() {});
                         },
                         text: FFLocalizations.of(context).getText(
-                          'tvn54o9f' /* JOIN THE CHALLENGE */,
+                          'tvn54o9f' /* ¡ÚNETE AL RETO! */,
                         ),
                         options: FFButtonOptions(
                           width: MediaQuery.sizeOf(context).width * 0.7,
@@ -1491,7 +1503,7 @@ class _DashboardWidgetState extends State<DashboardWidget> {
                             children: [
                               TextSpan(
                                 text: FFLocalizations.of(context).getText(
-                                  '2cdo81nl' /* 91,000+ women  */,
+                                  '2cdo81nl' /* Más de 91 mil mujeres  */,
                                 ),
                                 style: FlutterFlowTheme.of(context)
                                     .bodyMedium
@@ -1514,7 +1526,7 @@ class _DashboardWidgetState extends State<DashboardWidget> {
                               ),
                               TextSpan(
                                 text: FFLocalizations.of(context).getText(
-                                  'clhaelj4' /* have taken this challenge, and... */,
+                                  'clhaelj4' /* han tomado este reto, y  */,
                                 ),
                                 style: FlutterFlowTheme.of(context)
                                     .bodyMedium
@@ -1536,7 +1548,7 @@ class _DashboardWidgetState extends State<DashboardWidget> {
                               ),
                               TextSpan(
                                 text: FFLocalizations.of(context).getText(
-                                  'fwse24sg' /* 92% of finishers said “It has ... */,
+                                  'fwse24sg' /* el 92% de quienes terminaron e... */,
                                 ),
                                 style: FlutterFlowTheme.of(context)
                                     .bodyMedium
@@ -1896,7 +1908,7 @@ class _DashboardWidgetState extends State<DashboardWidget> {
                           await widget.reserveMySeatAction?.call();
                         },
                         text: FFLocalizations.of(context).getText(
-                          'phsineyb' /* START MY CHALLENGE */,
+                          'phsineyb' /* COMENZAR MI RETO */,
                         ),
                         options: FFButtonOptions(
                           width: MediaQuery.sizeOf(context).width * 0.7,
@@ -1943,7 +1955,7 @@ class _DashboardWidgetState extends State<DashboardWidget> {
                             children: [
                               TextSpan(
                                 text: FFLocalizations.of(context).getText(
-                                  'x0h469el' /* Based on your answers, you jus... */,
+                                  'x0h469el' /* Según tus respuestas, solo nec... */,
                                 ),
                                 style: FlutterFlowTheme.of(context)
                                     .bodyMedium
@@ -1970,8 +1982,7 @@ class _DashboardWidgetState extends State<DashboardWidget> {
                               TextSpan(
                                 text: FFLocalizations.of(context).getText(
                                   'u03zkhmn' /* 
-10 min a day, for 14 days
- */
+10 minutos al día, durante 14... */
                                   ,
                                 ),
                                 style: FlutterFlowTheme.of(context)
@@ -1995,7 +2006,7 @@ class _DashboardWidgetState extends State<DashboardWidget> {
                               ),
                               TextSpan(
                                 text: FFLocalizations.of(context).getText(
-                                  'lxtttebt' /* to get beautiful and healthy h... */,
+                                  'lxtttebt' /*  para lucir un cabello hermoso... */,
                                 ),
                                 style: FlutterFlowTheme.of(context)
                                     .bodyMedium
@@ -2076,8 +2087,8 @@ class _DashboardWidgetState extends State<DashboardWidget> {
                               decoration: BoxDecoration(),
                               child: Text(
                                 FFLocalizations.of(context).getText(
-                                  'rpb2l5tr' /* 100%
-Results */
+                                  'rpb2l5tr' /* 100% 
+RESULTADOS */
                                   ,
                                 ),
                                 textAlign: TextAlign.center,
@@ -2115,7 +2126,7 @@ Results */
                               child: Text(
                                 FFLocalizations.of(context).getText(
                                   '7qu4hw6f' /* 0%
-Hassle */
+ROLLOS */
                                   ,
                                 ),
                                 textAlign: TextAlign.center,
@@ -2215,7 +2226,7 @@ Hassle */
                                                   text: FFLocalizations.of(
                                                           context)
                                                       .getText(
-                                                    'on4egm7h' /* Science-based and  */,
+                                                    'on4egm7h' /* Basado en la ciencia y  */,
                                                   ),
                                                   style: FlutterFlowTheme.of(
                                                           context)
@@ -2247,7 +2258,7 @@ Hassle */
                                                   text: FFLocalizations.of(
                                                           context)
                                                       .getText(
-                                                    '5zr2seie' /* reviewed by haircare experts. */,
+                                                    '5zr2seie' /* revisado por expertos en el cu... */,
                                                   ),
                                                   style: FlutterFlowTheme.of(
                                                           context)
@@ -2368,7 +2379,7 @@ Hassle */
                                                   text: FFLocalizations.of(
                                                           context)
                                                       .getText(
-                                                    '7t1iikxr' /* Get a  */,
+                                                    '7t1iikxr' /* Obtén un  */,
                                                   ),
                                                   style: FlutterFlowTheme.of(
                                                           context)
@@ -2400,7 +2411,7 @@ Hassle */
                                                   text: FFLocalizations.of(
                                                           context)
                                                       .getText(
-                                                    'hv2znn3j' /* nutrient-rich meal plan  */,
+                                                    'hv2znn3j' /* un plan de alimentación rico e... */,
                                                   ),
                                                   style: FlutterFlowTheme.of(
                                                           context)
@@ -2432,7 +2443,7 @@ Hassle */
                                                   text: FFLocalizations.of(
                                                           context)
                                                       .getText(
-                                                    'q9istz0v' /* to minimise hair loss and enha... */,
+                                                    'q9istz0v' /* para minimizar la caída del ca... */,
                                                   ),
                                                   style: TextStyle(
                                                     color: Color(0xFF1E191D),
@@ -2533,7 +2544,7 @@ Hassle */
                                                   text: FFLocalizations.of(
                                                           context)
                                                       .getText(
-                                                    'yqzvlhso' /* Save thousands  */,
+                                                    'yqzvlhso' /* Ahorra miles de pesos  */,
                                                   ),
                                                   style: FlutterFlowTheme.of(
                                                           context)
@@ -2565,7 +2576,7 @@ Hassle */
                                                   text: FFLocalizations.of(
                                                           context)
                                                       .getText(
-                                                    '16qkzkbg' /* on products and salon treatmen... */,
+                                                    '16qkzkbg' /* en productos y tratamientos de... */,
                                                   ),
                                                   style: TextStyle(
                                                     color: Color(0xFF1E191D),
@@ -2690,10 +2701,10 @@ Hassle */
                         padding: EdgeInsetsDirectional.fromSTEB(
                             0.0, 30.0, 0.0, 15.0),
                         child: Text(
-                          'Only ${valueOrDefault<String>(
+                          'Quedan solo ${valueOrDefault<String>(
                             random_data.randomInteger(3, 9).toString(),
                             '7',
-                          )} seats remaining. Hurry Up!',
+                          )} lugares. ¡Date prisa!',
                           textAlign: TextAlign.center,
                           style:
                               FlutterFlowTheme.of(context).bodyMedium.override(
@@ -2776,7 +2787,7 @@ Hassle */
                                     await widget.reserveMySeatAction?.call();
                                   },
                                   text: FFLocalizations.of(context).getText(
-                                    '8p79eqjq' /* START MY CHALLENGE */,
+                                    '8p79eqjq' /* COMENZAR MI RETO */,
                                   ),
                                   options: FFButtonOptions(
                                     height: 50.0,
@@ -2828,7 +2839,7 @@ Hassle */
                             EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
                         child: Text(
                           FFLocalizations.of(context).getText(
-                            '6kg20sml' /* 100% Refund guarantee | No Que... */,
+                            '6kg20sml' /* Garantía de reembolso del 100%... */,
                           ),
                           textAlign: TextAlign.center,
                           style:

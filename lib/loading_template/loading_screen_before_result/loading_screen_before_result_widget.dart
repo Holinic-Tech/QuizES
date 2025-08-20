@@ -109,7 +109,7 @@ class _LoadingScreenBeforeResultWidgetState
                   padding: EdgeInsetsDirectional.fromSTEB(0.0, 35.0, 0.0, 0.0),
                   child: Text(
                     FFLocalizations.of(context).getText(
-                      'thdd4opu' /* Restore your hair follicle hea... */,
+                      'thdd4opu' /* Creando tu programa de cuidado... */,
                     ),
                     textAlign: TextAlign.center,
                     style: FlutterFlowTheme.of(context).bodyMedium.override(

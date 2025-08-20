@@ -4,8 +4,8 @@ abstract class FFAppConstants {
   static const double horizontalPadding = 20.0;
 
   /// CONTINUE
-  static const String continues = 'CONTINUE';
-  static const String back = 'BACK';
+  static const String continues = 'CONTINUAR';
+  static const String back = 'ATRÁS';
   static const double templateTopPadding = 10.0;
 
   /// App Gradient color List

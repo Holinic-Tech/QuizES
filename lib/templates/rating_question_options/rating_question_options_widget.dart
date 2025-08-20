@@ -601,7 +601,7 @@ class _RatingQuestionOptionsWidgetState
                           children: [
                             Text(
                               FFLocalizations.of(context).getText(
-                                'kfse574s' /* Not at all */,
+                                'kfse574s' /* Para nada. */,
                               ),
                               style: FlutterFlowTheme.of(context)
                                   .bodyMedium
@@ -624,7 +624,7 @@ class _RatingQuestionOptionsWidgetState
                             ),
                             Text(
                               FFLocalizations.of(context).getText(
-                                '9qrzqazn' /* Totally */,
+                                '9qrzqazn' /* ¡Totalmente! */,
                               ),
                               style: FlutterFlowTheme.of(context)
                                   .bodyMedium

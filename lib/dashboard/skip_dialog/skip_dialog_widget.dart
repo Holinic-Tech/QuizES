@@ -118,7 +118,7 @@ class _SkipDialogWidgetState extends State<SkipDialogWidget> {
                     ),
                     Text(
                       FFLocalizations.of(context).getText(
-                        '0cja6uh2' /* ⚠️ Before you continue... */,
+                        '0cja6uh2' /* ⚠️ Antes de continuar... */,
                       ),
                       style: FlutterFlowTheme.of(context).bodyMedium.override(
                             font: GoogleFonts.inter(
@@ -149,7 +149,7 @@ class _SkipDialogWidgetState extends State<SkipDialogWidget> {
                       EdgeInsetsDirectional.fromSTEB(25.0, 20.0, 25.0, 0.0),
                   child: Text(
                     FFLocalizations.of(context).getText(
-                      'biuiym7a' /* Only skip the quiz if you've p... */,
+                      'biuiym7a' /* Solo omite el cuestionario si ... */,
                     ),
                     textAlign: TextAlign.center,
                     style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -221,7 +221,7 @@ class _SkipDialogWidgetState extends State<SkipDialogWidget> {
                                     12.0),
                                 child: AutoSizeText(
                                   FFLocalizations.of(context).getText(
-                                    '6x7g4z0e' /* BACK TO QUIZ */,
+                                    '6x7g4z0e' /* VOLVER */,
                                   ),
                                   minFontSize: 14.0,
                                   style: FlutterFlowTheme.of(context)
@@ -300,7 +300,7 @@ class _SkipDialogWidgetState extends State<SkipDialogWidget> {
                                     12.0),
                                 child: AutoSizeText(
                                   FFLocalizations.of(context).getText(
-                                    'jn6yshoa' /* SKIP QUIZ */,
+                                    'jn6yshoa' /* OMITIR */,
                                   ),
                                   minFontSize: 14.0,
                                   style: FlutterFlowTheme.of(context)

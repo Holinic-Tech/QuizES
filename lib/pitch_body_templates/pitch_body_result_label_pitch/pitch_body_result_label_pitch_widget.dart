@@ -329,9 +329,7 @@ class _PitchBodyResultLabelPitchWidgetState
                                   text: FFLocalizations.of(context).getText(
                                     'oc18k0vv' /* 
 
-Here is what is happening:
-
- */
+Esto es lo que está pasando:... */
                                     ,
                                   ),
                                   style: FlutterFlowTheme.of(context)
