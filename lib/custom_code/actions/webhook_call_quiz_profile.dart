@@ -95,14 +95,11 @@ Future<void> webhookCallQuizProfile() async {
       print("Failed to get IP address: $e");
     }
 
-    // Get current quiz URL (host + path)
+    // Get current quiz URL (host + path) - FIXED VERSION
     String quizUrl = '';
     try {
-      final uri = Uri.parse(GoRouter.of(NavigatorKey.currentContext!)
-          .routerDelegate
-          .currentConfiguration
-          .uri
-          .toString());
+      // Use Uri.base which gets the current page URL in web builds
+      final uri = Uri.base;
       quizUrl = '${uri.scheme}://${uri.host}${uri.path}';
     } catch (e) {
       print("Failed to get quiz URL: $e");
