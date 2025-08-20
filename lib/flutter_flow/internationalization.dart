@@ -352,7 +352,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'fr': '|',
     },
     'oy280vcm': {
-      'en': 'Start by selecting your goal:',
+      'en': 'Beginne mit der Auswahl deines Ziels:',
       'de': 'Beginnen Sie mit der Auswahl Ihres Ziels:',
       'es': 'Comience seleccionando su objetivo:',
       'fr': 'Commencez par sélectionner votre objectif :',
@@ -422,7 +422,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'fr': '(Sélectionnez tout ce qui s\'applique)',
     },
     'vzfmsa5z': {
-      'en': 'None of the above',
+      'en': 'Nichts davon',
       'de': 'Nichts des oben Genannten',
       'es': 'Ninguna de las anteriores',
       'fr': 'Aucune des réponses ci-dessus',
@@ -782,7 +782,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'fr': '(Sélectionnez tout ce qui s\'applique)',
     },
     'ig7rz0ud': {
-      'en': 'None of the above',
+      'en': 'Nichts davon',
       'de': 'Nichts des oben Genannten',
       'es': 'Ninguna de las anteriores',
       'fr': 'Aucune des réponses ci-dessus',
@@ -1122,19 +1122,19 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   // ImageBackground_QuesBodyV2
   {
     'rvqxeq7r': {
-      'en': 'Start by selecting your goal:',
+      'en': 'Beginne mit der Auswahl deines Ziels:',
       'de': 'Beginnen Sie mit der Auswahl Ihres Ziels:',
       'es': 'Comience seleccionando su objetivo:',
       'fr': 'Commencez par sélectionner votre objectif :',
     },
     'fi8xv3qb': {
-      'en': 'I want BOTH',
+      'en': 'Ich will BEIDES',
       'de': 'Ich will BEIDES',
       'es': 'Quiero AMBOS',
       'fr': 'Je veux les DEUX',
     },
     '6laxeb4h': {
-      'en': 'Skip',
+      'en': 'Überspringen',
       'de': 'Überspringen',
       'es': 'Saltar',
       'fr': 'Sauter',

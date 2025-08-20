@@ -57,7 +57,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
       _model.isWebview = await actions.isFacebookWebView();
       FFAppState().isWebview = _model.isWebview!;
       safeSetState(() {});
-      setAppLanguage(context, 'en');
+      setAppLanguage(context, 'de');
     });
 
     WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
@@ -1716,9 +1716,9 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                     return 'Problemas del cabello';
                                   }
                                 }(),
-                                'hair problems',
+                                'Haarprobleme',
                               )} en 14 días:',
-                              'Probability to reduce your hair problems in 14 days',
+                              'Wahrscheinlichkeit, deine Haarprobleme in 14 Tagen zu reduzieren',
                             ),
                             submitAction: () async {
                               _model.capitalisedName =
@@ -1826,7 +1826,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                           updateCallback: () => safeSetState(() {}),
                           child: QuestionAnswerAdditionlInfoWidget(
                             question:
-                                'Do you believe your hair problems could be influenced by factors beyond just products?',
+                                'Glaubst du, dass deine Haarprobleme von Faktoren beeinflusst werden könnten, die über reine Produkte hinausgehen?',
                             answerList: FFAppState().mindsetState,
                             answerAction: () async {
                               await actions.trackGAEvent(
@@ -1868,7 +1868,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                             updateCallback: () => safeSetState(() {}),
                             child: ImageBackgroundQuesBodyV3Widget(
                               question:
-                                  'See if the Challenge is a fit for you and your hair profile',
+                                  'Finde heraus, ob die Challenge zu dir und deinem Haarprofil passt',
                               answer1: '',
                               answer2: '',
                               logoShow: true,
